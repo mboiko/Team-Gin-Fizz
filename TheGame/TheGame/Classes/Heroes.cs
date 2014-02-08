@@ -10,7 +10,7 @@ namespace TheGame
        private string name;
        private sbyte IQ;
        private sbyte age;
-
+       //change by emo
        private int creativity;
        private int logic;
        private int programming;
