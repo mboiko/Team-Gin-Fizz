@@ -8,6 +8,7 @@ namespace TheGame
     abstract class Equipment
     {
         public string name;
+        //Just a comment to see what happens
         public byte timeModifier;
     }
 }
