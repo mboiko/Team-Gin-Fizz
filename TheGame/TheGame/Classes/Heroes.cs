@@ -10,11 +10,13 @@ namespace TheGame
        private string name;
        private sbyte IQ;
        private sbyte age;
+
        private int creativity;
        private int logic;
        private int programming;
        private int efficiently;
        private int motivation;
+
        private int points;
        private int time;
     }
