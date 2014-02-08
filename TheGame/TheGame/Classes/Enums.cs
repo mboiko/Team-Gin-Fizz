@@ -8,6 +8,7 @@ namespace TheGame
     public enum Gender
     {
         Male,
+
         Female,
         ArtificalIntelligence
     }
