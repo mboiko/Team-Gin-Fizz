@@ -7,15 +7,15 @@ namespace TheGame
 {
    abstract class Heroes
     {
-       private abstract string name;
-       private abstract sbyte IQ;
-       private abstract sbyte age;
-       private abstract int creativity;
-       private abstract int logic;
-       private abstract int programming;
-       private abstract int efficiently;
-       private abstract int motivation;
-       public abstract int points;
-       public abstract int time;
+       private string name;
+       private sbyte IQ;
+       private sbyte age;
+       private int creativity;
+       private int logic;
+       private int programming;
+       private int efficiently;
+       private int motivation;
+       private int points;
+       private int time;
     }
 }
