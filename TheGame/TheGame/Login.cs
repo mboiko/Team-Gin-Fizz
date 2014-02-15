@@ -20,5 +20,11 @@ namespace TheGame
         {
             
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BaseForm form1 = new BaseForm();
+            form1.Show();
+        }
     }
 }
