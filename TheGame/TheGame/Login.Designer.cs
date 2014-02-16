@@ -41,14 +41,15 @@
             this.txtUserName.Location = new System.Drawing.Point(212, 284);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(117, 20);
-            this.txtUserName.TabIndex = 0;
+            this.txtUserName.TabIndex = 1;
+            this.txtUserName.UseSystemPasswordChar = true;
             // 
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(86, 284);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(117, 20);
-            this.txtPassword.TabIndex = 1;
+            this.txtPassword.TabIndex = 0;
             // 
             // label1
             // 
@@ -73,7 +74,7 @@
             this.button1.Location = new System.Drawing.Point(148, 314);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(114, 23);
-            this.button1.TabIndex = 5;
+            this.button1.TabIndex = 2;
             this.button1.Text = "LOGIN";
             this.button1.UseVisualStyleBackColor = true;
             // 
