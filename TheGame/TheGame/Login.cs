@@ -21,10 +21,12 @@ namespace TheGame
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            BaseForm form1 = new BaseForm();
-            form1.Show();
+            //BaseForm form1 = new BaseForm();
+            //form1.Show();
+          //  System.Windows.Forms.MessageBox.Show((Files.ReadUsersFromFile(this.txtUserName.Text, this.txtPassword.Text).ToString()));
+           
         }
     }
 }
