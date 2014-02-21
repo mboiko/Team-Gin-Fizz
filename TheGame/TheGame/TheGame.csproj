@@ -64,6 +64,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Files.cs" />
+    <Compile Include="Classes\GameObject.cs" />
+    <Compile Include="Classes\GameStats.cs" />
+    <Compile Include="Classes\SellableItem.cs" />
+    <Compile Include="Classes\Item.cs" />
+    <Compile Include="Classes\Skill.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +98,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="GameClassDiagram.cd" />
     <None Include="Properties\DataSources\Program.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
