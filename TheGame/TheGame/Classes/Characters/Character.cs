@@ -1,4 +1,4 @@
-﻿namespace TheGame
+﻿namespace TheGame.Classes
 {
     using System;
     public abstract class Character

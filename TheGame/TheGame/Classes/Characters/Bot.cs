@@ -1,4 +1,4 @@
-﻿namespace TheGame.Classes.Characters
+﻿namespace TheGame.Classes
 {
     using System;
     using System.Collections.Generic;
@@ -7,6 +7,12 @@
     {
         private List<string> lines;
         private List<string> sounds;
+
+        public Bot(List<string> lines, List<string>sounds)
+        {
+            this.lines = lines;
+            this.sounds = sounds;
+        }
 
         //methods
         public string GetLine()
