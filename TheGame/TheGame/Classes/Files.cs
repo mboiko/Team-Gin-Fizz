@@ -10,7 +10,6 @@ namespace TheGame
     {
         public static bool ReadUsersFromFile(string username, string password)
         {
-
             if (!File.Exists("users.txt"))
             {
                 CreateUser(username, password);

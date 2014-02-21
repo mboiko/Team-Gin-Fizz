@@ -1,5 +1,8 @@
 ﻿namespace TheGame
 {
+    using System;
+    using System.Windows.Forms;
+
     partial class Login
     {
         /// <summary>
@@ -102,10 +105,10 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtUserName;
-        private System.Windows.Forms.TextBox txtPassword;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
+        private TextBox txtUserName;
+        private TextBox txtPassword;
+        private Label label1;
+        private Label label2;
+        private Button button1;
     }
 }
