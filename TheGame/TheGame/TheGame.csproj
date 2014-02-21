@@ -63,13 +63,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ActionType.cs" />
-    <Compile Include="Classes\Action.cs" />
+    <Compile Include="Classes\Actions\ActionType.cs" />
+    <Compile Include="Classes\Actions\Action.cs" />
     <Compile Include="Classes\Files.cs" />
-    <Compile Include="Classes\GameObject.cs" />
+    <Compile Include="Classes\Items\GameObject.cs" />
     <Compile Include="Classes\GameStats.cs" />
-    <Compile Include="Classes\SellableItem.cs" />
-    <Compile Include="Classes\Item.cs" />
+    <Compile Include="Classes\Items\SellableItem.cs" />
+    <Compile Include="Classes\Items\Item.cs" />
     <Compile Include="Classes\Skill.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -83,10 +83,11 @@
     <Compile Include="BaseForm.Designer.cs">
       <DependentUpon>BaseForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Classes\PlayerType.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Classes\Quest.cs" />
-    <Compile Include="Classes\Тrouble.cs" />
+    <Compile Include="Classes\Actions\Quest.cs" />
+    <Compile Include="Classes\Actions\Тrouble.cs" />
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
