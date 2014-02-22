@@ -1,4 +1,4 @@
-﻿namespace TheGame
+﻿namespace TheGame.Classes.Characters
 {
     using System;
     public abstract class Character
@@ -11,6 +11,11 @@
         //    this.Nickname = name;
         //    this.login = login;
         //}
+
+        public Character(string nickname)
+        {
+            this.Nickname = nickname;
+        }
 
 
         // properties

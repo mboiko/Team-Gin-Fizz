@@ -1,4 +1,4 @@
-﻿namespace TheGame.Classes
+﻿namespace TheGame.Classes.Items
 {
     using System;
     using System.Collections.Generic;

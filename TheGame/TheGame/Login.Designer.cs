@@ -33,7 +33,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            ComponentResourceManager resources = new ComponentResourceManager(typeof(Login));
             this.txtUserName = new TextBox();
             this.txtPassword = new TextBox();
             this.label1 = new Label();
