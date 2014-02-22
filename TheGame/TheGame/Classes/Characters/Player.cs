@@ -5,17 +5,17 @@
 
     public class Player : Character
     {
-        private int level;
-        private int score;
-        private List<Skill> skills;
-        //private List<Mission> currentMissions;
-        private PlayerType playerType;
-        private char gender;
-        //private Set<Item> inventory;
-        //private Set<Item> equippedItems;
-        private int equippedItemsSize;
-        private double efficiency;
-        //private Location location;
-
+        public int Level { get; private set; }
+        public int Score { get; private set; }
+        public List<Skill> Skills { get; private set; }
+        //public List<Mission> currentMissions { get; private set; }
+        public PlayerType PlayerType { get; private set; }
+        public char Gender { get; private set; }
+        //public Set<Item> Inventory { get; private set; }
+        //public Set<Item> EquippedItems { get; private set; }
+        public int EquippedItemsSize { get; private set; }
+        public double Efficiency { get; private set; }
+        //public Location location { get; private set; }
+     
     }
 }
