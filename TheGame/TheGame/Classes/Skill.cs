@@ -5,7 +5,7 @@
     using System.Linq;
     using System.Text;
 
-    class Skill
+    public class Skill
     {
         #region Fields and Propeties
 
