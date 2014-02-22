@@ -12,6 +12,12 @@
         private string name;
         private string description;
 
+        //public GameObject(string name, string description)
+        //{
+        //    this.Name = name;
+        //    this.Description = description;
+        //}
+
         public string Name 
         {
             get
@@ -59,6 +65,10 @@
         #region Methods
 
         //TODO: ovverid to ..ToString
+        public override string ToString()
+        {
+            return string.Format("{0} - {1}", this.name, this.description);
+        }
 
         #endregion
     }
