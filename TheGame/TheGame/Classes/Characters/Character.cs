@@ -6,7 +6,7 @@
         private string nickname;
         //private Login login { get; private set; }
 
-        //public Character(string name, Login login)   
+        //public Character(string name, Login login)
         //{
         //    this.Nickname = name;
         //    this.login = login;
