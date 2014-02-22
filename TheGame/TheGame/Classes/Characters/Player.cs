@@ -17,10 +17,10 @@
         public double Efficiency { get; private set; }
         //public Location location { get; private set; }
 
+        // to add location, mission and set items
         public Player(string nickName, int score, List<Skill> skills, PlayerType playerType,
-            char gender, int equippedItemsSize, double efficiency)
+            char gender, int equippedItemsSize, double efficiency) : base(nickName)
         {
-            this.Nickname = nickName;
             this.Score = score;
             this.Skills = skills;
             this.PlayerType = playerType;
