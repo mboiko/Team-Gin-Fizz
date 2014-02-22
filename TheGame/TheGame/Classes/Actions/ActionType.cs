@@ -1,10 +1,9 @@
-﻿namespace TheGame.Classes.Actions
+﻿namespace TheGame.Classes
 {
     public enum ActionType
     {
         Primary,
         Secondary,
-        Bonus,
         Аccidental
     }
 }

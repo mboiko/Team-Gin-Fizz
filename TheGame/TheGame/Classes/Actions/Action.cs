@@ -1,4 +1,4 @@
-﻿namespace TheGame.Classes.Actions
+﻿namespace TheGame.Classes
 {
     public abstract class Action
     {

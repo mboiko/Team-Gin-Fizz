@@ -1,4 +1,4 @@
-﻿namespace TheGame.Classes.Characters
+﻿namespace TheGame.Classes
 {
     using System.Collections.Generic;
 
@@ -6,8 +6,8 @@
     {
         //private List<Trouble> trouble;
 
-        public EvilBot(string name, List<string> lines, List<string> sounds)
-            : base(name, lines, sounds)
+        public EvilBot(List<string> lines, List<string> sounds)
+            : base(lines, sounds)
         {
 
         }
