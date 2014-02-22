@@ -7,12 +7,6 @@
 
     static class Program
     {
-        public static int GetRandomNumber(int min, int max)
-        {
-            Random randomInt = new Random();
-            return randomInt.Next(min, max + 1);
-        }
-
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
