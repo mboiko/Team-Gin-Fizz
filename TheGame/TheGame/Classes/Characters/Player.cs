@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using TheGame.Classes;
 
     public class Player : Character
     {
