@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using TheGame.Classes.Items;
 
     public class Quest : Action
     {

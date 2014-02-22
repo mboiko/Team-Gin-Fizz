@@ -6,8 +6,8 @@
     {
         //private List<Trouble> trouble;
 
-        public EvilBot(List<string> lines, List<string> sounds)
-            : base(lines, sounds)
+        public EvilBot(string name, List<string> lines, List<string> sounds)
+            : base(name, lines, sounds)
         {
 
         }
