@@ -10,14 +10,51 @@
         #region Fields and Propeties
 
         string name;
-        int value;
+        int skillCost;
 
         //TODO: Encapsulate with properties
+        public string Name 
+        {
+            get
+            {
+                return this.name;
+            }
+            set
+            {
+                if (string.IsNullOrEmpty(value))
+                {
+                    throw new ArgumentNullException("Name cannot be null or empty.");
+                }
+
+                if (value.Length < 2)
+                {
+                    throw new ArgumentOutOfRangeException("Name cannot be less than 2 symbols");
+                }
+
+                this.name = value;
+            }
+        }
+
+        public int SkillCost 
+        {
+            get
+            {
+                return this.skillCost;
+            }
+            set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentException("Scill cost cannot be 0 or negative.");
+                }
+            }
+        }
         #endregion
 
         #region Constructor
 
         //TODO: Implement constructor
+
 
         #endregion
 
