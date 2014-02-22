@@ -45,6 +45,7 @@
         #region Methods
 
         //TODO: Override ToString, Equals, GetHashCode
+        
 
         #endregion
 
