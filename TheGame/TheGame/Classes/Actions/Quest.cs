@@ -1,7 +1,8 @@
-﻿namespace TheGame.Classes
+﻿namespace TheGame.Classes.Actions
 {
     using System;
     using System.Collections.Generic;
+    using TheGame.Classes.Items;
 
     public class Quest : Action
     {

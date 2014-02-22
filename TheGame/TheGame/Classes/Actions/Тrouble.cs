@@ -1,4 +1,4 @@
-﻿namespace TheGame.Classes
+﻿namespace TheGame.Classes.Actions
 {
     public class Тrouble : Action
     {
