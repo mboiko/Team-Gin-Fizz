@@ -19,9 +19,8 @@
         //public Location location { get; private set; }
 
         public Player(string nickName, int score, List<Skill> skills, PlayerType playerType,
-            char gender, int equippedItemsSize, double efficiency)
+            char gender, int equippedItemsSize, double efficiency) : base(nickName)
         {
-            this.Nickname = nickName;
             this.Score = score;
             this.Skills = skills;
             this.PlayerType = playerType;
