@@ -1,4 +1,4 @@
-﻿namespace TheGame
+﻿namespace TheGame.Classes.Characters
 {
     using System;
     using System.Collections.Generic;
