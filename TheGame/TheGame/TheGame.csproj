@@ -68,6 +68,7 @@
     <Compile Include="Classes\Actions\ActionType.cs" />
     <Compile Include="Classes\Actions\Action.cs" />
     <Compile Include="Classes\Characters\EvilBot.cs" />
+    <Compile Include="Classes\Characters\Player.cs" />
     <Compile Include="Classes\Characters\Trainer.cs" />
     <Compile Include="Classes\Files.cs" />
     <Compile Include="Classes\Items\GameObject.cs" />

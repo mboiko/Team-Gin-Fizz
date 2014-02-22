@@ -1,4 +1,4 @@
-﻿namespace TheGame.Classes
+﻿namespace TheGame.Classes.Characters
 {
     using System;
     using System.Collections.Generic;
@@ -16,6 +16,17 @@
         public int EquippedItemsSize { get; private set; }
         public double Efficiency { get; private set; }
         //public Location location { get; private set; }
-     
+
+        public Player(string nickName, int score, List<Skill> skills, PlayerType playerType,
+            char gender, int equippedItemsSize, double efficiency)
+        {
+            this.Nickname = nickName;
+            this.Score = score;
+            this.Skills = skills;
+            this.PlayerType = playerType;
+            this.Gender = gender;
+            this.EquippedItemsSize = equippedItemsSize;
+            this.Efficiency = efficiency;
+        }
     }
 }
