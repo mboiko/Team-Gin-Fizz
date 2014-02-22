@@ -47,6 +47,8 @@
                 {
                     throw new ArgumentException("Scill cost cannot be 0 or negative.");
                 }
+
+                this.skillCost = value;
             }
         }
         #endregion
@@ -54,13 +56,54 @@
         #region Constructor
 
         //TODO: Implement constructor
-
+        public Skill(string name, int scillCost)
+        {
+            this.Name = name;
+            this.SkillCost = scillCost;
+        }
 
         #endregion
 
         #region Methods
 
         //TODO: Override ToString, Equals, GetHashCode
+
+        public override string ToString()
+        {
+            return string.Format("Scill name: {0}, cost: {1}", this.Name, this.SkillCost);
+        }
+
+        public override bool Equals(object obj)
+        {
+            var skill = obj as Skill;
+
+            if (skill == null)
+            {
+                throw new ArgumentException("Passed object is not Skill");
+            }
+
+            if ((this.Name == skill.Name) && (this.skillCost == skill.skillCost))
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+        public static bool operator ==(Skill first, Skill second)
+        {
+            return object.Equals(first, second);
+        }
+
+        public static bool operator !=(Skill first, Skill second)
+        {
+            return !object.Equals(first, second);
+        }
+
+        public override int GetHashCode()
+        {
+            return this.Name.GetHashCode() ^ this.SkillCost.GetHashCode();
+        }
 
         #endregion
     }

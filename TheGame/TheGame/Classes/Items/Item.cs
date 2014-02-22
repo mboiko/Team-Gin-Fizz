@@ -67,7 +67,7 @@
             StringBuilder allBonuses = new StringBuilder();
             foreach (var bonus in bonusSkills)
             {
-                allBonuses.AppendLine(bonus.Name.ToString);
+                allBonuses.AppendLine(bonus.Name);
             }
             return string.Format(" Name: {0}\n Description: {1}\n Bonuses: {2}", this.Name, this.Description, allBonuses.ToString());
         }
