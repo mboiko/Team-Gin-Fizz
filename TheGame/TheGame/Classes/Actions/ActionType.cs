@@ -1,4 +1,4 @@
-﻿namespace TheGame.Classes
+﻿namespace TheGame
 {
     public enum ActionType
     {

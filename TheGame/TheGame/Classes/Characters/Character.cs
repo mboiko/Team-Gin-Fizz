@@ -12,6 +12,11 @@
         //    this.login = login;
         //}
 
+        public Character(string nickname)
+        {
+            this.Nickname = nickname;
+        }
+
 
         // properties
         public string Nickname
