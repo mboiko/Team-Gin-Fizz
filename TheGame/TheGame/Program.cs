@@ -47,7 +47,18 @@
                     new Quest("The Exam", "This is the last submission of C# Programing - Part II", ActionType.Secondary, 50, 50, false),
                 },
 
-
+                new List<Quest>()
+                {
+                    new Quest("Object Oriented Programming - \"OOP\"", "To complete this mission you have to pass all submissions", ActionType.Primary, 0, 0, false),
+                    new Quest("Defining Classes – Part I", "Submission of OOP", ActionType.Secondary, 28, 28, false),
+                    new Quest("Defining Classes – Part II", "Submission of OOP", ActionType.Secondary, 28, 28, false),
+                    new Quest("Extension Methods, Lambda Expressions and LINQ", "Submission of OOP", ActionType.Secondary, 28, 28, false),
+                    new Quest("Object-Oriented Programming Fundamental Principles – Part I", "Submission of OOP", ActionType.Secondary, 28, 28, false),
+                    new Quest("Object-Oriented Programming Fundamental Principles – Part II", "Submission of OOP", ActionType.Secondary, 28, 28, false),
+                    new Quest("Common Type System", "Submission of OOP", ActionType.Secondary, 28, 28, false),
+                    new Quest("Team Work Project", "If you pass this mission you may won a present. This mission is not obligatory.", ActionType.Bonus, 30, 30, false),
+                    new Quest("The Exam", "This is the last submission of C# Programing - Part II", ActionType.Secondary, 50, 50, false),
+                }
             };
         }
     }
