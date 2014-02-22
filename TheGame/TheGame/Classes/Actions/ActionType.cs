@@ -4,6 +4,7 @@
     {
         Primary,
         Secondary,
+        Bonus,
         Аccidental
     }
 }

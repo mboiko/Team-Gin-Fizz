@@ -1,6 +1,7 @@
 ﻿namespace TheGame.Classes.Characters
 {
     using System.Collections.Generic;
+    using TheGame.Classes.Actions;
 
     public class Trainer //: Bot
     {
