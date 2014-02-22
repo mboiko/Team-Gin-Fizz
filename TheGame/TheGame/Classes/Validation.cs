@@ -3,17 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace TheGame.Classes
+namespace TheGame
 {
    static class Validation
     {
-       static bool IsCorrectLogin(string username, string password)
+      public static string IsCorrectLogin(string username, string password)
        {
-           if (username.Length < 3 && password.Length < 3)
+           string message=string.Empty;
+           if (username.Length < 3 )
            {
-               return false;
+               message +=  "Username must be at least 3 chars long\n" ;
            }
-           return true;
+           if(password.Length < 3)
+           {
+               message += "Password must be at least 3 chars long";
+           }
+           return message;
        }
     }
 }
