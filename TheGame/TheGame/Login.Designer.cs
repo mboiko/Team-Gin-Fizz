@@ -47,7 +47,6 @@
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(117, 20);
             this.txtUserName.TabIndex = 0;
-            this.txtUserName.UseSystemPasswordChar = true;
             // 
             // txtPassword
             // 
@@ -55,6 +54,7 @@
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(117, 20);
             this.txtPassword.TabIndex = 1;
+            this.txtPassword.UseSystemPasswordChar = true;
             // 
             // label1
             // 
