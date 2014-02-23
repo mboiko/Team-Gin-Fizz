@@ -25,9 +25,5 @@
             this.EnergyCost = energyCost;
             this.IsCompleted = isCompleted;
         }
-
-        //methods
-        public abstract void CompleteAction();
-
     }
 }

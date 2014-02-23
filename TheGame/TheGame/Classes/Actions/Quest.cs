@@ -3,6 +3,7 @@
     using System;
     using System.Collections.Generic;
     using TheGame.Classes.Items;
+    using TheGame.Classes.Characters;
 
     public class Quest : Action
     {
@@ -18,11 +19,6 @@
         public void DropGift()
         {
             //to implement later
-        }
-
-        public override void CompleteAction()
-        {
-            throw new NotImplementedException();
         }
     }
 }

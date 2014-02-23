@@ -2,7 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
-    using TheGame.Classes;
+    using TheGame.Classes.Actions;
     using TheGame.Classes.Items;
 
     public class Player : Character
@@ -10,7 +10,7 @@
         public int Level { get; private set; }
         public int Score { get; private set; }
         public List<Skill> Skills { get; private set; }
-       // public List<Mission> currentMissions { get; private set; }
+        public List<Quest> currentMissions { get; private set; }
         public PlayerType PlayerType { get; private set; }
         public char Gender { get; private set; }
         public List<Item> Inventory { get; private set; }
@@ -19,7 +19,7 @@
         public double Efficiency { get; private set; }
         //public Location location { get; private set; }
 
-        // Must be added Mission and location
+        // Must be added location
         public Player(string nickName, int Level, int score, List<Skill> skills, PlayerType playerType,
             char gender,  List<Item> inventory, List<Item> equippedItems,
             int equippedItemsSize, double efficiency) : base(nickName)
