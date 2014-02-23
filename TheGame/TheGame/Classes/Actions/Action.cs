@@ -7,7 +7,13 @@
         public ActionType ActionType { get; private set; }
         public int TimeCost { get; private set; }
         public int EnergyCost { get; private set; }
-        public bool IsCompleted { get; private set; }
+        private bool isCompleted;
+
+        public bool IsCompleted
+        {
+            get { return this.isCompleted; }
+            set { this.isCompleted = value; }
+        }
 
         // constructor
         public Action(string name, string description, ActionType actionType, int timeCost, int energyCost, bool isCompleted)
