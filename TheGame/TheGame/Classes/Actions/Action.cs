@@ -18,6 +18,9 @@
         }
 
         //methods
+        public abstract void getEnergyCost();
+
+        public abstract void getTimeCost();
 
     }
 }
