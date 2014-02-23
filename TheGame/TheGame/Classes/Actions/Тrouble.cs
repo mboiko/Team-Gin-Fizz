@@ -2,8 +2,8 @@
 {
     public class Тrouble : Action
     {
-        public Тrouble(string name, string description, ActionType actionType, int timeCost, int energyCost, bool isCompleted)
-            : base(name, description, actionType, timeCost, energyCost, isCompleted)
+        public Тrouble(string name, int timeCost, int energyCost, bool isCompleted)
+            : base(name, timeCost, energyCost, isCompleted)
         {
 
         }

@@ -54,6 +54,7 @@
                 {
                     throw new ArgumentOutOfRangeException("Description cannot be less than 2 symbols");
                 }
+                this.description = value;
             }
         }
 

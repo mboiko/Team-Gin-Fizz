@@ -12,14 +12,14 @@
         {
             for (int i = 0; i < questToGive.Count; i++)
             {
-                if (!questToGive[i].IsCompleted)
+                if (!questToGive[i].IsComplеted)
                 {
                     return questToGive[i];
                 }
             }
 
             return new Quest("Game Over", "Turn off the game and try your skills at the real Telerik Academy!",
-                ActionType.Primary, 3000, 1000, true);
+                new List<Action>(), new List<Items.Item>());
         }
     }
 }

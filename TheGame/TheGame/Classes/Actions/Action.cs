@@ -17,6 +17,7 @@
             this.IsCompleted = isCompleted;
         }
 
+        //methods
 
     }
 }

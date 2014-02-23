@@ -23,6 +23,14 @@
             {
                 return maxTime;
             }
+            protected set 
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentException("Argument maxTime cannot be negative or equal to zero.");
+                }
+                this.maxTime = value;
+            }
         }
 
         public int CurrentTime
@@ -33,7 +41,11 @@
             }
             protected set
             {
-                currentTime = value;
+                if (value < 0)
+                {
+                    throw new ArgumentException("Argument currentTime cannot be negative.");
+                }
+                this.currentTime = value;
             }
         }
 
@@ -45,6 +57,10 @@
             }
             protected set
             {
+                if (value < 0)
+                {
+                    throw new ArgumentException("Argument currentEnergy cannot be negative.");
+                }
                 this.currentEnergy = value;
             }
         }
@@ -54,6 +70,14 @@
             get
             {
                 return maxEnergy;
+            }
+            protected set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentException("Argument maxEnergy cannot be negative or equal to zero.");
+                }
+                this.maxEnergy = value;
             }
         }
 
@@ -67,7 +91,7 @@
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentException("Level cannot be 0 or negative.");
+                    throw new ArgumentException("Argument level cannot be negative or equal to zero.");
                 }
 
                 this.level = value;
@@ -83,6 +107,11 @@
             }
             protected set
             {
+                if (value < 0)
+                {
+                    throw new ArgumentException("Cannot add negative value to experience.");
+                }
+
                 this.currentExperience = value;
                 if (this.currentExperience >= this.maxExperience)
                 {
@@ -98,6 +127,14 @@
             {
                 return this.maxExperience;
             }
+            protected set
+            {
+                if (value <= 0)
+                {
+                    throw new ArgumentException("Argument maxExperience cannot be negative or equal to zero.");
+                }
+                this.maxExperience = value;
+            }
         }
 
         public List<Skill> Skills
@@ -105,6 +142,14 @@
             get
             {
                 return new List<Skill>(this.skills);
+            }
+            protected set
+            {
+                if (value == null)
+                {
+                    throw new ArgumentNullException("skills");
+                }
+                this.skills = value;
             }
         }
 
@@ -117,6 +162,23 @@
             }
         }
 
+
+        #endregion
+
+        #region Constructors
+
+        public GameStats(List<Skill> skills, int currentEnergy, int maxEnergy, int level,
+            double currentExperience, double maxExperience, int currentTime, int maxTime)
+        {
+            this.Skills = skills;
+            this.CurrentEnergy = currentEnergy;
+            this.MaxEnergy = maxEnergy;
+            this.Level = level;
+            this.currentExperience = currentExperience;
+            this.MaxExperience = maxExperience;
+            this.CurrentTime = currentTime;
+            this.MaxTime = maxTime;
+        }
 
         #endregion
 

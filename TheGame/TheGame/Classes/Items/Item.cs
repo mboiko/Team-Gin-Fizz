@@ -48,9 +48,8 @@
 
         //TODO: Construcors
         public Item(string name, string description, List<Skill> bonusSkills)
+            : base(name, description)
         {
-            this.Name = name;
-            this.Description = description;
             this.BonusSkills = bonusSkills;
         }
 
