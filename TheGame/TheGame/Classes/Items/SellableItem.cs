@@ -1,6 +1,7 @@
 ﻿namespace TheGame.Classes.Items
 {
     using System;
+    using System.Collections.Generic;
 
     public class SellableItem : Item
     {
@@ -22,6 +23,7 @@
                 {
                     throw new ArgumentException("Price cannot be 0 or negative.");
                 }
+                this.price = value;
             }
         }
 
@@ -31,8 +33,8 @@
 
         //TODO: Construcors
 
-        public SellableItem(string name, string description, double price)
-            :base(name, description)
+        public SellableItem(string name, string description, List<Skill> bonusSkills, double price)
+            :base(name, description, bonusSkills)
         {
             this.Price = price;
         }

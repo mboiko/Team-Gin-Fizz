@@ -1,14 +1,14 @@
 ﻿namespace TheGame.Classes.Characters
 {
     using System.Collections.Generic;
-    using TheGame.Classes;
+    using TheGame.Classes.Actions;
     using TheGame.Classes.Items;
 
     public class Player : Character
     {
-        private GameStats gameStats;
-
-        //TODO: Add fields and validate them with properties
+        public int Level { get; private set; }
+        public int Score { get; private set; }
+        public List<Skill> Skills { get; private set; }
        // public List<Mission> currentMissions { get; private set; }
         public PlayerType PlayerType { get; private set; }
         public char Gender { get; private set; }
@@ -19,7 +19,7 @@
         //public Location location { get; private set; }
 
         // Must be added Mission and location
-        public Player(string nickName, GameStats gameStats, PlayerType playerType,
+        public Player(string nickName, int Level, int score, List<Skill> skills, PlayerType playerType,
             char gender,  List<Item> inventory, List<Item> equippedItems,
             int equippedItemsSize) : base(nickName)
         {
