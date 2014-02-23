@@ -25,8 +25,10 @@ namespace TheGame
         {
             //BaseForm form1 = new BaseForm();
             //form1.Show();
-          //  System.Windows.Forms.MessageBox.Show((Files.ReadUsersFromFile(this.txtUserName.Text, this.txtPassword.Text).ToString()));
-           
+         // System.Windows.Forms.MessageBox.Show((Files.ReadUsersFromFile(this.txtUserName.Text, this.txtPassword.Text).ToString()));
+            this.lblErrorMessage.Text = Validation.IsCorrectLogin(this.txtUserName.Text.ToString(), this.txtPassword.Text.ToString());
         }
+
+      
     }
 }

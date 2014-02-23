@@ -5,7 +5,7 @@
     using System.Linq;
     using System.Text;
 
-    class Item : GameObject
+    public class Item : GameObject
     {
         #region Fields and Properties
 
@@ -64,7 +64,12 @@
 
         public override string ToString()
         {
-            return base.ToString();
+            StringBuilder allBonuses = new StringBuilder();
+            foreach (var bonus in bonusSkills)
+            {
+                allBonuses.AppendLine(bonus.Name);
+            }
+            return string.Format(" Name: {0}\n Description: {1}\n Bonuses: {2}", this.Name, this.Description, allBonuses.ToString());
         }
 
         public override bool Equals(object obj)

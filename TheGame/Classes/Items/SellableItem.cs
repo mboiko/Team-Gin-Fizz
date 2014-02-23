@@ -5,7 +5,7 @@
     using System.Linq;
     using System.Text;
 
-    public class SellableItem : Item
+    class SellableItem : Item
     {
         #region Fields and Properties
 

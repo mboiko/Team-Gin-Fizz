@@ -76,6 +76,7 @@
     <Compile Include="Classes\Items\SellableItem.cs" />
     <Compile Include="Classes\Items\Item.cs" />
     <Compile Include="Classes\Skill.cs" />
+    <Compile Include="Classes\Validation.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>

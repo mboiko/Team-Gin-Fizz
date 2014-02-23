@@ -5,7 +5,7 @@
     using System.Linq;
     using System.Text;
 
-    abstract class GameObject
+    public abstract class GameObject
     {
         #region Fields and Properties
 
