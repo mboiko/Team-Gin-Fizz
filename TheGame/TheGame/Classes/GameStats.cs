@@ -2,8 +2,6 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
 
     public abstract class GameStats
     {
@@ -16,45 +14,56 @@
         private double currentExperience;
         private double maxExperience; //when is reached -> level up
         private double efficiency;
+        private int currentTime;
+        private int maxTime;
 
-        //TODO: Encapsulate with propeties
-        public int CurrentEnergy 
+        public int MaxTime
+        {
+            get
+            {
+                return maxTime;
+            }
+        }
+
+        public int CurrentTime
+        {
+            get
+            {
+                return currentTime;
+            }
+            protected set
+            {
+                currentTime = value;
+            }
+        }
+
+        public int CurrentEnergy
         {
             get
             {
                 return this.currentEnergy;
             }
-            set
+            protected set
             {
-                //TODO - ?? validation
                 this.currentEnergy = value;
             }
         }
 
-        public int MaxEnergy 
+        public int MaxEnergy
         {
             get
             {
-                return this.maxEnergy;
-            }
-            set
-            {
-                if (value < 0)
-                {
-                    throw new ArgumentException("Max Energy cannot be negative.");
-                }
-
-                this.maxEnergy = value;
+                return maxEnergy;
             }
         }
 
-        public int Level 
+        public int Level
         {
             get
             {
                 return this.level;
             }
-            set
+            protected set
             {
                 if (value <= 0)
                 {
@@ -62,75 +71,89 @@
                 }
 
                 this.level = value;
+                //onLevelUp()
             }
         }
 
-        public double CurrentExperience 
+        public double CurrentExperience
         {
             get
             {
                 return this.currentExperience;
             }
-            set
+            protected set
             {
-                //TODO - ?? validation
                 this.currentExperience = value;
+                if (this.currentExperience >= this.maxExperience)
+                {
+                    this.currentExperience -= this.maxExperience;
+                    this.level++;
+                }
             }
         }
 
-        public double MaxExperience 
+        public double MaxExperience
         {
             get
             {
                 return this.maxExperience;
             }
-            set
-            {
-                 if (value < 0)
-                {
-                    throw new ArgumentException("Max Experience cannot be negative.");
-                }
-
-                this.maxExperience = value;
-            }
         }
 
-        public double Efficiency 
+        public List<Skill> Skills
         {
             get
             {
-                return this.efficiency;
-            }
-            set
-            {
-                //TODO - ?? validation
-                this.efficiency = value;
+                return new List<Skill>(this.skills);
             }
         }
+
+        public double Efficiency
+        {
+            get
+            {
+                this.CalculateEfficiency();
+                return this.efficiency;
+            }
+        }
+
 
         #endregion
 
         #region Methods
 
+        protected abstract void CalculateEfficiency();
+
         public void AddSkill(Skill skillToAdd)
         {
-            throw new NotImplementedException();
+            if (skillToAdd == null)
+            {
+                throw new ArgumentNullException("skillToAdd");
+            }
+
+            this.skills.Add(skillToAdd);
         }
 
         public void UpdateSkill(string name, int value)
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < this.skills.Count; i++)
+            {
+                if (this.skills[i].Name == name)
+                {
+                    this.skills[i].SkillValue += value;
+                    break;
+                }
+            }
         }
 
-        public virtual double GetEfficiencyCoef()
+        public void IncreaseExperience(double amount)
         {
-            throw new NotImplementedException();
-        }
+            if (amount < 0)
+            {
+                throw new ArgumentException("Argument amount cannot be negative.");
+            }
 
-        public void UpdateExperience(double amount)
-        {
-            //check if exp is enough for the next level
-            throw new NotImplementedException();
+            this.CurrentExperience += amount;
         }
 
         public void UpdateEnergy(int amount)

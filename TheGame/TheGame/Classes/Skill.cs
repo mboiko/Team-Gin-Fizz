@@ -1,25 +1,21 @@
 ﻿namespace TheGame.Classes
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
 
     public class Skill
     {
         #region Fields and Propeties
 
         string name;
-        int skillCost;
+        int skillValue;
 
-        //TODO: Encapsulate with properties
         public string Name 
         {
             get
             {
                 return this.name;
             }
-            set
+            protected set
             {
                 if (string.IsNullOrEmpty(value))
                 {
@@ -35,42 +31,39 @@
             }
         }
 
-        public int SkillCost 
+        public int SkillValue 
         {
             get
             {
-                return this.skillCost;
+                return this.skillValue;
             }
             set
             {
                 if (value <= 0)
                 {
-                    throw new ArgumentException("Scill cost cannot be 0 or negative.");
+                    throw new ArgumentException("Skill value cannot be 0 or negative.");
                 }
 
-                this.skillCost = value;
+                this.skillValue = value;
             }
         }
         #endregion
 
         #region Constructor
 
-        //TODO: Implement constructor
-        public Skill(string name, int scillCost)
+        public Skill(string name, int scillValue)
         {
             this.Name = name;
-            this.SkillCost = scillCost;
+            this.SkillValue = scillValue;
         }
 
         #endregion
 
         #region Methods
 
-        //TODO: Override ToString, Equals, GetHashCode
-
         public override string ToString()
         {
-            return string.Format("Scill name: {0}, cost: {1}", this.Name, this.SkillCost);
+            return string.Format("Scill name: {0}, value: {1}", this.Name, this.SkillValue);
         }
 
         public override bool Equals(object obj)
@@ -79,10 +72,10 @@
 
             if (skill == null)
             {
-                throw new ArgumentException("Passed object is not Skill");
+                return false;
             }
 
-            if ((this.Name == skill.Name) && (this.skillCost == skill.skillCost))
+            if ((this.Name == skill.Name) && (this.skillValue == skill.skillValue))
             {
                 return true;
             }
@@ -102,7 +95,7 @@
 
         public override int GetHashCode()
         {
-            return this.Name.GetHashCode() ^ this.SkillCost.GetHashCode();
+            return this.Name.GetHashCode() ^ this.SkillValue.GetHashCode();
         }
 
         #endregion

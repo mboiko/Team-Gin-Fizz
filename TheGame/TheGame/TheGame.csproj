@@ -70,6 +70,8 @@
     <Compile Include="Classes\Characters\EvilBot.cs" />
     <Compile Include="Classes\Characters\Player.cs" />
     <Compile Include="Classes\Characters\Trainer.cs" />
+    <Compile Include="Classes\Exceptions\NotEnoughEnergyException.cs" />
+    <Compile Include="Classes\Exceptions\NotEnoughTimeException.cs" />
     <Compile Include="Classes\Files.cs" />
     <Compile Include="Classes\Items\GameObject.cs" />
     <Compile Include="Classes\GameStats.cs" />

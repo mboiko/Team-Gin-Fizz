@@ -2,7 +2,6 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
     using System.Text;
 
     public class Item : GameObject
@@ -33,10 +32,14 @@
             {
                 return new List<Skill>(this.bonusSkills);
             }
-            //set
-            //{
-
-            //}
+            protected set 
+            {
+                if (value == null)
+                {
+                    throw new ArgumentNullException("bonusSkills");
+                }
+                this.bonusSkills = value;
+            }
         }
 
         #endregion
@@ -44,11 +47,11 @@
         #region Constructors
 
         //TODO: Construcors
-        public Item(string name, string description)
+        public Item(string name, string description, List<Skill> bonusSkills)
         {
             this.Name = name;
             this.Description = description;
-            bonusSkills = new List<Skill>();
+            this.BonusSkills = bonusSkills;
         }
 
         #endregion

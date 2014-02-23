@@ -2,27 +2,74 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Linq;
     using TheGame.Classes.Items;
 
-    public class Quest : Action
+    public class Quest : GameObject
     {
-        private List<GameObject> gifts;
+        #region Fields and Properties
 
-        public Quest(string name, string description, ActionType actionType, int timeCost, int energyCost, bool isCompleted)
-            : base(name, description, actionType, timeCost, energyCost, isCompleted)
+        private List<Action> requirmets;
+        private List<Item> gifts;
+        private bool isComplited;
+
+        public bool IsComplited
         {
-
+            get { return isComplited; }
+            private set { isComplited = value; }
         }
 
-        //methods
-        public void DropGift()
+        #endregion
+
+        #region Constructor
+
+        public Quest(string name, string description, List<Action> requiremets, List<Item> gifts)
+            :base(name, description)
         {
-            //to implement later
+            //TODO: encapsulte and validate these two
+            this.requirmets = requirmets;
+            this.gifts = gifts;
+
+            this.isComplited = false;
         }
 
-        public override void CompleteAction()
+        #endregion
+
+        #region Methods
+
+        //if the quest isn't complited returns null
+        public List<Item> GetReward()
         {
-            throw new NotImplementedException();
+            if (this.IsComplited)
+            {
+                return this.gifts;
+            }
+            return null;
         }
+
+        public void CheckForAction(Action action)
+        {
+            for (int i = 0; i < this.requirmets.Count; i++)
+            {
+                if (action.Equals(this.requirmets[i]))
+                {
+                    this.requirmets[i].IsCompleted = true;
+                }
+            }
+
+            if (this.IsComplitedQuest();)
+            {
+                this.isComplited = true;
+                //onQuestComplited();
+            }
+        }
+
+        private bool IsComplitedQuest()
+        {
+            return this.requirmets.Count(action => action.IsCompleted) == this.requirmets.Count;
+        }
+
+        #endregion
+       
     }
 }

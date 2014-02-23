@@ -1,9 +1,6 @@
 ﻿namespace TheGame.Classes.Items
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
 
     public abstract class GameObject
     {
@@ -24,7 +21,7 @@
             {
                 return this.name;
             }
-            set
+            protected set
             {
                 if (string.IsNullOrEmpty(value))
                 {
@@ -46,7 +43,7 @@
             {
                 return this.description;
             }
-            set
+            protected set
             {
                 if (string.IsNullOrEmpty(value))
                 {
@@ -58,6 +55,16 @@
                     throw new ArgumentOutOfRangeException("Description cannot be less than 2 symbols");
                 }
             }
+        }
+
+        #endregion
+
+        #region Constructor
+
+        public GameObject(string name, string description)
+        {
+            this.Name = name;
+            this.Description = description;
         }
 
         #endregion
