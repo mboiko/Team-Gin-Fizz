@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using TheGame.Classes.Actions;
 using TheGame.Classes.Items;
+using System.IO;
 
 namespace TheGame.Classes.Characters
 {
@@ -20,5 +21,29 @@ namespace TheGame.Classes.Characters
             this.Username = username;
             this.Password = password;
         }
+
+     //   public  void Save()
+     //   {
+     //       List<Item> equipItems = EquippedItems;
+     //       List<Skill> playerSkills = Skills;
+     //       List<Quest> currentQuest = CurrentQuests;
+     //       PlayerType playerType = PlayerType;
+     //       string playerName = Name;
+     //       string userName = Username;
+     //       StreamWriter str = new StreamWriter("../../Save.txt", true);
+     //       try
+     //       {
+     //           using (str)
+     //           {
+     //               
+     //           }
+     //       }
+     //       catch (Exception)
+     //       {
+     //           
+     //           throw;
+     //       }
+     //       
+     //   }
     }
 }
