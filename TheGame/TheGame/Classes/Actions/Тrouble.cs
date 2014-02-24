@@ -2,21 +2,12 @@
 {
     public class Тrouble : Action
     {
-        public Тrouble(string name, bool isCompleted)
-            : base(name, isCompleted)
+        public Point2D Location { get; private set; }
+
+        public Тrouble(string name, int energyCost, int timeCost, bool isCompleted, Point2D location)
+            : base(name, energyCost, timeCost, isCompleted)
         {
-
-        }
-
-
-        public override int GetEnergyCost()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public override int GetTimeCost()
-        {
-            throw new System.NotImplementedException();
+            this.Location = location;
         }
     }
 }

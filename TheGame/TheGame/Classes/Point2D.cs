@@ -5,7 +5,7 @@ using System.Text;
 
 namespace TheGame.Classes
 {
-    struct Point2D
+    public struct Point2D
     {
         public readonly double X;
 

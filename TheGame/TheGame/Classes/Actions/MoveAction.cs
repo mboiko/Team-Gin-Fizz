@@ -9,20 +9,10 @@ namespace TheGame.Classes.Actions
     {
         private Point2D destination;
 
-        public MoveAction(string name, bool isCompleted, Point2D destination)
-            : base(name, isCompleted)
+        public MoveAction(string name, int energyCost, int timeCost, bool isCompleted, Point2D destination)
+            : base(name, energyCost, timeCost, isCompleted)
         {
             this.destination = destination;
-        }
-
-        public override int GetEnergyCost()
-        {
-            return 0;
-        }
-
-        public override int GetTimeCost()
-        {
-            return (int)(destination.X * destination.Y); 
         }
     }
 }
