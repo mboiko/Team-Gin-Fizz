@@ -63,21 +63,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Actions\MoveAction.cs" />
     <Compile Include="Classes\Characters\Bot.cs" />
     <Compile Include="Classes\Characters\Character.cs" />
     <Compile Include="Classes\Actions\Action.cs" />
     <Compile Include="Classes\Characters\EvilBot.cs" />
+    <Compile Include="Classes\Characters\Hero.cs" />
     <Compile Include="Classes\Characters\Player.cs" />
     <Compile Include="Classes\Characters\Trainer.cs" />
     <Compile Include="Classes\Exceptions\NotEnoughEnergyException.cs" />
     <Compile Include="Classes\Exceptions\NotEnoughTimeException.cs" />
     <Compile Include="Classes\Files.cs" />
-    <Compile Include="Classes\Items\GameObject.cs" />
+    <Compile Include="Classes\GameObject.cs" />
     <Compile Include="Classes\GameStats.cs" />
     <Compile Include="Classes\Items\SellableItem.cs" />
     <Compile Include="Classes\Items\Item.cs" />
+    <Compile Include="Classes\RandomGenerator.cs" />
     <Compile Include="Classes\Skill.cs" />
+    <Compile Include="Classes\StaticObject.cs" />
     <Compile Include="Classes\Validation.cs" />
+    <Compile Include="Classes\IPositionable.cs" />
+    <Compile Include="Classes\IControlable.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,8 @@
       <DependentUpon>BaseForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\PlayerType.cs" />
+    <Compile Include="Classes\Point2D.cs" />
+    <Compile Include="Classes\PositionableObject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\Items\Quest.cs" />
@@ -111,6 +119,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="ClassDiagram1.cd" />
+    <None Include="ClassDiagram2.cd" />
     <None Include="GameClassDiagram.cd" />
     <None Include="Properties\DataSources\Program.datasource" />
     <None Include="Properties\Settings.settings">

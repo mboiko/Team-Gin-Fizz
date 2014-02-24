@@ -17,12 +17,12 @@
         //methods
         public string GetLine()
         {
-            return lines[GetRandomNumber(0, lines.Count)];
+            return lines[RandomGenerator.GetRandomNumber(0, lines.Count)];
         }
 
         public string GetSound()
         {
-            return sounds[GetRandomNumber(0, sounds.Count)];
+            return sounds[RandomGenerator.GetRandomNumber(0, sounds.Count)];
         }
 
     }

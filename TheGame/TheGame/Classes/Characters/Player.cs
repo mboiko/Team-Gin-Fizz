@@ -1,33 +1,22 @@
-﻿namespace TheGame.Classes.Characters
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace TheGame.Classes.Characters
 {
-    using System.Collections.Generic;
-    using TheGame.Classes.Actions;
-    using TheGame.Classes.Items;
-
-    public class Player : Character
+    public class Player : Hero, IControlable
     {
-        public int Level { get; private set; }
-        public int Score { get; private set; }
-        public List<Skill> Skills { get; private set; }
-       // public List<Mission> currentMissions { get; private set; }
-        public PlayerType PlayerType { get; private set; }
-        public char Gender { get; private set; }
-        public List<Item> Inventory { get; private set; }
-        public List<Item> EquippedItems { get; private set; }
-        public int EquippedItemsSize { get; private set; }
+        public string Username { get; protected set; }
 
-        //public Location location { get; private set; }
+        public string Password { get; protected set; }
 
-        // Must be added Mission and location
-        public Player(string nickName, int Level, int score, List<Skill> skills, PlayerType playerType,
-            char gender,  List<Item> inventory, List<Item> equippedItems,
-            int equippedItemsSize) : base(nickName)
+        public Player(string username, string password, string name, int Level, int experience, List<Skill> skills, PlayerType playerType,
+            char gender, List<Items.Item> equippedItems, int equippedItemsSize)
+            : base(name, Level, experience, skills, playerType, gender, equippedItems, equippedItemsSize)
         {
-            this.PlayerType = playerType;
-            this.Gender = gender;
-            this.Inventory = inventory;
-            this.EquippedItems = equippedItems;
-            this.EquippedItemsSize = equippedItemsSize;
+            this.Username = username;
+            this.Password = password;
         }
     }
 }

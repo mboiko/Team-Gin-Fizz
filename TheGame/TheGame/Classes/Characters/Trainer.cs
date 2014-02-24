@@ -3,9 +3,15 @@
     using System.Collections.Generic;
     using TheGame.Classes.Actions;
 
-    public class Trainer //: Bot
+    public class Trainer : Character
     {
         public List<Quest> questToGive;
+
+        public Trainer(string name, List<Quest> quests)
+            : base(name)
+        {
+            this.questToGive = quests;
+        }
 
         //constructor
         public Quest GiveQuest()
