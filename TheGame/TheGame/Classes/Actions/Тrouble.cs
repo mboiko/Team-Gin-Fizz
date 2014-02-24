@@ -2,10 +2,20 @@
 {
     public class Тrouble : Action
     {
-        public Тrouble(string name, int timeCost, int energyCost, bool isCompleted)
-            : base(name, timeCost, energyCost, isCompleted)
+        public Тrouble(string name, bool isCompleted)
+            : base(name, isCompleted)
         {
 
+        }
+
+        public override void getEnergyCost()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override void getTimeCost()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

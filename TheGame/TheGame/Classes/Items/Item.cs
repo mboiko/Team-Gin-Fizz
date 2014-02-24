@@ -10,7 +10,13 @@
 
         private List<Skill> bonusSkills;
         private bool isEquiped;
+        private string description;
 
+        public string Description
+        {
+            get { return description; }
+            protected set { description = value; }
+        }
         //TODO: Encapsulation with properties
 
         public bool IsEquiped 
@@ -48,9 +54,10 @@
 
         //TODO: Construcors
         public Item(string name, string description, List<Skill> bonusSkills)
-            : base(name, description)
+            : base(name)
         {
             this.BonusSkills = bonusSkills;
+            this.Description = description;
         }
 
         #endregion
