@@ -95,7 +95,6 @@
             this.lblErrorMessage.Name = "lblErrorMessage";
             this.lblErrorMessage.Size = new System.Drawing.Size(0, 13);
             this.lblErrorMessage.TabIndex = 5;
-            
             // 
             // Login
             // 
