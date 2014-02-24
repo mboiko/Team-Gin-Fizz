@@ -65,7 +65,7 @@
             this.tabPageMap.Location = new System.Drawing.Point(4, 22);
             this.tabPageMap.Name = "tabPageMap";
             this.tabPageMap.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPageMap.Size = new System.Drawing.Size(983, 602);
+            this.tabPageMap.Size = new System.Drawing.Size(983, 603);
             this.tabPageMap.TabIndex = 0;
             this.tabPageMap.Text = "Map";
             this.tabPageMap.UseVisualStyleBackColor = true;
