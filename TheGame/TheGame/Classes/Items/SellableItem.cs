@@ -33,8 +33,8 @@
 
         //TODO: Construcors
 
-        public SellableItem(string name, List<Skill> bonusSkills, double price)
-            :base(name, bonusSkills)
+        public SellableItem(string name, List<Skill> bonusSkills, double price, bool isEnquiped)
+            : base(name, bonusSkills, isEnquiped)
         {
             this.Price = price;
         }

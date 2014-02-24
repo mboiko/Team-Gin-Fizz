@@ -20,6 +20,8 @@
 
             List<Item> someitem = TheGame.Parсer.GetAllConsumableItems();
 
+            List<Equipment> equipments = TheGame.Parсer.GetAllEquipments();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());

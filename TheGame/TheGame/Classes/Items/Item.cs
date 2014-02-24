@@ -10,14 +10,6 @@
 
         private List<Skill> bonusSkills;
         private bool isEquiped;
-        //private string description;
-
-        //public string Description
-        //{
-        //    get { return description; }
-        //    protected set { description = value; }
-        //}
-        //TODO: Encapsulation with properties
 
         public bool IsEquiped 
         {
@@ -52,19 +44,16 @@
         
         #region Constructors
 
-        //TODO: Construcors
-        public Item(string name, List<Skill> bonusSkills)
+        public Item(string name, List<Skill> bonusSkills, bool isEquiped)
             : base(name)
         {
             this.BonusSkills = bonusSkills;
-           // this.Description = description;
+            this.IsEquiped = isEquiped;
         }
 
         #endregion
 
         #region Methods
-
-        //TODO: Override ToString, Equals, GetHashCode
 
         public void AddSkill(Skill newSkill)
         {
@@ -78,7 +67,7 @@
             {
                 allBonuses.AppendLine(bonus.Name);
             }
-            return string.Format("{0} {1}", this.Name, string.Join(" ", allBonuses));
+            return string.Format("{0} {1} {3}", this.Name, string.Join(" ", allBonuses), this.IsEquiped);
         }
 
         public override bool Equals(object obj)
