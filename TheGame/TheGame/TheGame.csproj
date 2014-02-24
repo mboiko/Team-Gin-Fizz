@@ -84,6 +84,8 @@
     <Compile Include="Classes\Validation.cs" />
     <Compile Include="Classes\IPositionable.cs" />
     <Compile Include="Classes\IControlable.cs" />
+    <Compile Include="Classes\Items\Equipment.cs" />
+    <Compile Include="Classes\Items\IWearable.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -51,9 +51,10 @@
 
         #region Constructor
 
-        public Skill(string name, int scillValue)
+        public Skill(string name, int skillBaseValue, int scillValue)
         {
             this.Name = name;
+            this.SkillBaseValue = skillBaseValue;
             this.SkillValue = scillValue;
         }
 
