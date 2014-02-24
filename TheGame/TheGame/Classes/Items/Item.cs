@@ -62,12 +62,7 @@
 
         public override string ToString()
         {
-            StringBuilder allBonuses = new StringBuilder();
-            foreach (var bonus in bonusSkills)
-            {
-                allBonuses.AppendLine(bonus.Name);
-            }
-            return string.Format("{0} {1} {3}", this.Name, string.Join(" ", allBonuses), this.IsEquiped);
+            return string.Format("{0}I{1}I{2}", this.Name, string.Join("|", this.BonusSkills), this.IsEquiped);
         }
 
         public override bool Equals(object obj)

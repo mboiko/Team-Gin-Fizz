@@ -43,8 +43,11 @@
 
         #region Methods
 
-        //TODO: Override ToString, Equals, GetHashCode
-        
+        //TODO: Equals, GetHashCode
+        public override string ToString()
+        {
+            return string.Format("{0}|{1}|{2}", this.Name, string.Join("|", this.BonusSkills), this.IsEquiped);
+        }
 
         #endregion
 

@@ -21,5 +21,10 @@
                 hero.Skills[skill].BaseSkillValue += BonusSkills[skill].BaseSkillValue;
             }
         }
+
+        public override string ToString()
+        {
+            return string.Format("{0}|{1}|{2}", this.Name, string.Join("|", this.BonusSkills), this.IsEquiped);
+        }
     }
 }
