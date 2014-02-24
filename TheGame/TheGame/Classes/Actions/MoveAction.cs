@@ -14,6 +14,7 @@ namespace TheGame.Classes.Actions
         {
             this.destination = destination;
         }
+
         public override int GetEnergyCost()
         {
             return 0;
