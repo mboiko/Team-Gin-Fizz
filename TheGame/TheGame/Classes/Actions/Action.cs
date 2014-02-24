@@ -4,16 +4,12 @@
     {
         //TODO: Encapsolated and validate fields
         public string Name { get; private set; }
-        public int TimeCost { protected set; }
-        public int EnergyCost { protected set; }
         public bool IsCompleted { get; set; }
 
         // constructor
-        public Action(string name, int timeCost, int energyCost, bool isCompleted)
+        public Action(string name, bool isCompleted)
         {
             this.Name = name;
-            this.TimeCost = timeCost;
-            this.EnergyCost = energyCost;
             this.IsCompleted = isCompleted;
         }
 

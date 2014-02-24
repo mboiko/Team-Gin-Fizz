@@ -9,8 +9,8 @@ namespace TheGame.Classes.Actions
     {
         private Point2D destination;
 
-        public MoveAction(string name, int timeCost, int energyCost, bool isCompleted, Point2D destination)
-            : base(name, timeCost, energyCost, isCompleted)
+        public MoveAction(string name, bool isCompleted, Point2D destination)
+            : base(name, isCompleted)
         {
             this.destination = destination;
         }
@@ -21,7 +21,7 @@ namespace TheGame.Classes.Actions
 
         public override int GetTimeCost()
         {
-            return destination.X * destination.Y; 
+            return (int)(destination.X * destination.Y); 
         }
     }
 }
