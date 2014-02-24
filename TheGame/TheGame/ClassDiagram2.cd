@@ -38,7 +38,7 @@
   <Class Name="TheGame.Classes.Actions.Action" Collapsed="true">
     <Position X="9.75" Y="4" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAQAAAAAAAAAAAAAAQAAAQAAAABQBAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAQAAAAAABAAAQAAAAAAAAA=</HashCode>
       <FileName>Classes\Actions\Action.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -88,7 +88,7 @@
   <Class Name="TheGame.Classes.Characters.Hero" Collapsed="true">
     <Position X="3.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>EAAAAAAAAAAAAACAAAAAAEAAARAAAAABAAAAAAAAQAA=</HashCode>
+      <HashCode>EAIAAAQAAAAAAACAAAAAAEAAARAgAAABAAAAAAAAQAA=</HashCode>
       <FileName>Classes\Characters\Hero.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -111,13 +111,6 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Exceptions\NotEnoughTimeException.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="TheGame.Classes.GameObject" Collapsed="true">
-    <Position X="5.25" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAEAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Classes\GameObject.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TheGame.Classes.GameStats" Collapsed="true">
@@ -188,6 +181,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\RandomGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheGame.Classes.GameObject" Collapsed="true">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\GameObject.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Struct Name="TheGame.Classes.Point2D" Collapsed="true">

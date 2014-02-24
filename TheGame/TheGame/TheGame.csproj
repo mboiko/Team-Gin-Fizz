@@ -74,7 +74,6 @@
     <Compile Include="Classes\Exceptions\NotEnoughEnergyException.cs" />
     <Compile Include="Classes\Exceptions\NotEnoughTimeException.cs" />
     <Compile Include="Classes\Files.cs" />
-    <Compile Include="Classes\GameObject.cs" />
     <Compile Include="Classes\GameStats.cs" />
     <Compile Include="Classes\Items\SellableItem.cs" />
     <Compile Include="Classes\Items\Item.cs" />
@@ -86,6 +85,7 @@
     <Compile Include="Classes\IControlable.cs" />
     <Compile Include="Classes\Items\Equipment.cs" />
     <Compile Include="Classes\Items\IWearable.cs" />
+    <Compile Include="Classes\GameObject.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
