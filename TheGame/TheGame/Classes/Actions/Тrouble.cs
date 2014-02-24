@@ -8,12 +8,13 @@
 
         }
 
-        public override void getEnergyCost()
+
+        public override int GetEnergyCost()
         {
             throw new System.NotImplementedException();
         }
 
-        public override void getTimeCost()
+        public override int GetTimeCost()
         {
             throw new System.NotImplementedException();
         }

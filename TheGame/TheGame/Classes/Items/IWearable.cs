@@ -4,7 +4,6 @@
 
     interface IWearable
     {
-        int SkillBaseValue { get; set; }
         void IncreaseBaseSkill(Hero hero);
     }
 }

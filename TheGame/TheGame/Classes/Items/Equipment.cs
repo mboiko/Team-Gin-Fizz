@@ -6,20 +6,13 @@
 
     public class Equipment : Item, IWearable
     {
-        public int SkillBaseValue
+        //constructor
+        public Equipment(string name, string description, List<Skill> skills) : base(name, description, skills)
         {
-            get { return this.SkillBaseValue; }
-            set
-            {
-                if (value <= 0)
-                {
-                    throw new ArgumentException("Skill value cannot be 0 or negative.");
-                }
 
-                this.SkillBaseValue = value;
-            }
         }
 
+        //method
         public void IncreaseBaseSkill(Hero hero)
         {
             for (int skill = 0; skill < hero.Skills.Count; skill++)
