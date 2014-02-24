@@ -5,6 +5,8 @@
     using System.Linq;
     using System.Windows.Forms;
     using TheGame.Classes.Actions;
+    using TheGame.Classes.Items;
+    using TheGame.Classes;
 
     static class Program
     {
@@ -14,6 +16,10 @@
         [STAThread]
         static void Main()
         {
+            List<Skill> someSkills = TheGame.Parсer.GetAllSkills();
+
+            List<Item> someitem = TheGame.Parсer.GetAllConsumableItems();
+
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());

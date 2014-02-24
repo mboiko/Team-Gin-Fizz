@@ -7,7 +7,7 @@
     public class Equipment : Item, IWearable
     {
         //constructor
-        public Equipment(string name, string description, List<Skill> skills) : base(name, description, skills)
+        public Equipment(string name, List<Skill> skills) : base(name, skills)
         {
 
         }

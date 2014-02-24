@@ -202,7 +202,7 @@
             {
                 if (this.skills[i].Name == name)
                 {
-                    this.skills[i].SkillValue += value;
+                    this.skills[i].SkillCurrentValue += value;
                     break;
                 }
             }

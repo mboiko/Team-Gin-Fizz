@@ -40,7 +40,7 @@
         {
             for (int skillIndex = 0; skillIndex < this.Skills.Count; skillIndex++)
             {
-                this.Skills[skillIndex].SkillValue += item.BonusSkills[skillIndex].SkillValue;
+                this.Skills[skillIndex].SkillCurrentValue += item.BonusSkills[skillIndex].SkillCurrentValue;
             }
         }
     }

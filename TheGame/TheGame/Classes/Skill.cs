@@ -8,45 +8,24 @@
 
         string name;
         int baseSkillValue;
-        int currentSkillValue;
+        int skillCurrentValue;
 
 
         public string Name 
         {
-            get
-            {
-                return this.name;
-            }
-            protected set
-            {
-                if (string.IsNullOrEmpty(value))
-                {
-                    throw new ArgumentNullException("Name cannot be null or empty.");
-                }
-
-                if (value.Length < 2)
-                {
-                    throw new ArgumentOutOfRangeException("Name cannot be less than 2 symbols");
-                }
-
-                this.name = value;
-            }
+            get { return this.name; }
+            set { this.name = value; }
         }
 
-        public int SkillValue 
+        public int SkillCurrentValue 
         {
             get
             {
-                return this.currentSkillValue;
+                return this.skillCurrentValue;
             }
             set
             {
-                //if (value <= 0)
-                //{
-                //    throw new ArgumentException("Skill value cannot be 0 or negative.");
-                //}
-
-                this.currentSkillValue = value;
+                this.skillCurrentValue = value;
             }
         }
 
@@ -55,12 +34,7 @@
             get { return this.baseSkillValue; }
             set
             {
-                //if (value <= 0)
-                //{
-                //    throw new ArgumentException("Skill value cannot be 0 or negative.");
-                //}
-
-                this.currentSkillValue = value;
+                this.baseSkillValue = value;
             }
         }
 
@@ -68,11 +42,11 @@
 
         #region Constructor
 
-        public Skill(string name, int baseSkillValue, int scillValue)
+        public Skill(string name, int baseSkillValue, int skillCurrentValue)
         {
             this.Name = name;
             this.BaseSkillValue = baseSkillValue;
-            this.SkillValue = scillValue;
+            this.SkillCurrentValue = skillCurrentValue;
         }
 
         #endregion
@@ -81,7 +55,7 @@
 
         public override string ToString()
         {
-            return string.Format("Scill name: {0}, value: {1}", this.Name, this.SkillValue);
+            return string.Format("{0} {1} {2}", this.Name, this.BaseSkillValue, this.SkillCurrentValue);
         }
 
         public override bool Equals(object obj)
@@ -93,7 +67,7 @@
                 return false;
             }
 
-            if ((this.Name == skill.Name) && (this.currentSkillValue == skill.currentSkillValue))
+            if ((this.Name == skill.Name) && (this.skillCurrentValue == skill.skillCurrentValue))
             {
                 return true;
             }
@@ -113,7 +87,7 @@
 
         public override int GetHashCode()
         {
-            return this.Name.GetHashCode() ^ this.SkillValue.GetHashCode();
+            return this.Name.GetHashCode() ^ this.SkillCurrentValue.GetHashCode();
         }
 
         #endregion

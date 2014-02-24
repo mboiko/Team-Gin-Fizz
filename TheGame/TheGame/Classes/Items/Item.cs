@@ -10,13 +10,13 @@
 
         private List<Skill> bonusSkills;
         private bool isEquiped;
-        private string description;
+        //private string description;
 
-        public string Description
-        {
-            get { return description; }
-            protected set { description = value; }
-        }
+        //public string Description
+        //{
+        //    get { return description; }
+        //    protected set { description = value; }
+        //}
         //TODO: Encapsulation with properties
 
         public bool IsEquiped 
@@ -53,11 +53,11 @@
         #region Constructors
 
         //TODO: Construcors
-        public Item(string name, string description, List<Skill> bonusSkills)
+        public Item(string name, List<Skill> bonusSkills)
             : base(name)
         {
             this.BonusSkills = bonusSkills;
-            this.Description = description;
+           // this.Description = description;
         }
 
         #endregion
@@ -78,7 +78,7 @@
             {
                 allBonuses.AppendLine(bonus.Name);
             }
-            return string.Format(" Name: {0}\n Description: {1}\n Bonuses: {2}", this.Name, this.Description, allBonuses.ToString());
+            return string.Format("{0} {1}", this.Name, string.Join(" ", allBonuses));
         }
 
         public override bool Equals(object obj)
@@ -90,7 +90,7 @@
 		        throw new ArgumentException("Passed object is not Item");
 	        }
 
-            if ((this.Name == item.Name) && (this.Description == item.Description) && (this.IsEquiped == item.IsEquiped))
+            if ((this.Name == item.Name) && (this.IsEquiped == item.IsEquiped))
 	        {
 		        return true;
 	        }
@@ -108,10 +108,10 @@
             return !object.Equals(first, second);
         }
 
-        public override int GetHashCode()
-        {
-            return this.Name.GetHashCode() ^ this.Description.GetHashCode();
-        }
+        //public override int GetHashCode()
+        //{
+        //    return this.Name.GetHashCode() ^ this.Description.GetHashCode();
+        //}
 
         #endregion
     }
