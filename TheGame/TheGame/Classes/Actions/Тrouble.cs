@@ -7,5 +7,15 @@
         {
 
         }
+
+        public override void getEnergyCost()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public override void getTimeCost()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
