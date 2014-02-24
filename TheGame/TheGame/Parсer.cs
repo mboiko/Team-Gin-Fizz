@@ -11,10 +11,10 @@
         public static List<Skill> GetAllSkills()
         {
             List<Skill> skills = new List<Skill>();
-            StreamReader sr = new StreamReader("../../Skills.txt");
-
+            
             try
             {
+                StreamReader sr = new StreamReader("../../Skills.txt");
                 using (sr)
                 {
                     while (!sr.EndOfStream)
