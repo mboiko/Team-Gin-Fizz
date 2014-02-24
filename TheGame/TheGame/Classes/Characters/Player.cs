@@ -22,28 +22,43 @@ namespace TheGame.Classes.Characters
             this.Password = password;
         }
 
-     //   public  void Save()
-     //   {
-     //       List<Item> equipItems = EquippedItems;
-     //       List<Skill> playerSkills = Skills;
-     //       List<Quest> currentQuest = CurrentQuests;
-     //       PlayerType playerType = PlayerType;
-     //       string playerName = Name;
-     //       string userName = Username;
-     //       StreamWriter str = new StreamWriter("../../Save.txt", true);
-     //       try
-     //       {
-     //           using (str)
-     //           {
-     //               
-     //           }
-     //       }
-     //       catch (Exception)
-     //       {
-     //           
-     //           throw;
-     //       }
-     //       
-     //   }
+        public void Save()
+        {
+            StreamWriter str = new StreamWriter("../../Save.txt", true);
+            try
+            {
+                using (str)
+                {
+                    str.WriteLine(Username);
+                    str.WriteLine(Name);
+                    str.WriteLine(Level);
+                    str.WriteLine(Experience);
+                    foreach (var skill in Skills)
+                    {
+                        str.Write(skill.ToString());
+                    }
+                    str.WriteLine();
+                    str.WriteLine(PlayerType);
+                    str.WriteLine(Gender.ToString());
+                    foreach (var equippedItem in EquippedItems)
+                    {
+                        str.Write(equippedItem.ToString());
+                    }
+                    str.WriteLine();
+                    str.WriteLine(EquippedItemsSize);
+                //   foreach (var quest in CurrentQuests)
+                //   {
+                //       str.Write(quest.ToString());
+                //   }
+
+                }
+            }
+            catch (IOException)
+            {
+
+                throw new IOException("Cannot write in save.txt");
+            }
+            
+        }
     }
 }
