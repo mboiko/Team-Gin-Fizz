@@ -63,6 +63,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Actions\MoveAction.cs" />
     <Compile Include="Classes\Characters\Bot.cs" />
     <Compile Include="Classes\Characters\Character.cs" />
     <Compile Include="Classes\Actions\Action.cs" />

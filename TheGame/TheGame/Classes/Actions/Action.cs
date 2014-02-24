@@ -4,8 +4,8 @@
     {
         //TODO: Encapsolated and validate fields
         public string Name { get; private set; }
-        public int TimeCost { get; private set; }
-        public int EnergyCost { get; private set; }
+        public int TimeCost { protected set; }
+        public int EnergyCost { protected set; }
         public bool IsCompleted { get; set; }
 
         // constructor
@@ -18,9 +18,9 @@
         }
 
         //methods
-        public abstract void getEnergyCost();
+        public abstract int GetEnergyCost();
 
-        public abstract void getTimeCost();
+        public abstract int GetTimeCost();
 
     }
 }
