@@ -7,7 +7,9 @@
         #region Fields and Propeties
 
         string name;
-        int skillValue;
+        int baseSkillValue;
+        int currentSkillValue;
+
 
         public string Name 
         {
@@ -35,25 +37,41 @@
         {
             get
             {
-                return this.skillValue;
+                return this.currentSkillValue;
             }
             set
             {
-                if (value <= 0)
-                {
-                    throw new ArgumentException("Skill value cannot be 0 or negative.");
-                }
+                //if (value <= 0)
+                //{
+                //    throw new ArgumentException("Skill value cannot be 0 or negative.");
+                //}
 
-                this.skillValue = value;
+                this.currentSkillValue = value;
             }
         }
+
+        public int BaseSkillValue
+        {
+            get { return this.baseSkillValue; }
+            set
+            {
+                //if (value <= 0)
+                //{
+                //    throw new ArgumentException("Skill value cannot be 0 or negative.");
+                //}
+
+                this.currentSkillValue = value;
+            }
+        }
+
         #endregion
 
         #region Constructor
 
-        public Skill(string name, int scillValue)
+        public Skill(string name, int baseSkillValue, int scillValue)
         {
             this.Name = name;
+            this.BaseSkillValue = baseSkillValue;
             this.SkillValue = scillValue;
         }
 
@@ -75,7 +93,7 @@
                 return false;
             }
 
-            if ((this.Name == skill.Name) && (this.skillValue == skill.skillValue))
+            if ((this.Name == skill.Name) && (this.currentSkillValue == skill.currentSkillValue))
             {
                 return true;
             }

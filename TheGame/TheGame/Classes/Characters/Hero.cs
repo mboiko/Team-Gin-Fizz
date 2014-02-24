@@ -31,11 +31,17 @@
             this.CurrentQuests = curentQuest;
         }
 
-        public void GetQuest()
+        public void GetQuest(Quest quest)
         {
-
+            CurrentQuests.Add(quest);
         }
 
-        // public void UseItem()
+        public void UseItem(Item item)
+        {
+            for (int skillIndex = 0; skillIndex < this.Skills.Count; skillIndex++)
+            {
+                this.Skills[skillIndex].SkillValue += item.BonusSkills[skillIndex].SkillValue;
+            }
+        }
     }
 }

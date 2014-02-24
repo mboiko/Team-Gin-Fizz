@@ -9,7 +9,7 @@
 
         private double price;
 
-        //TODO: Encapsulation with properties
+        //TODO: Encapsulation with properties   дс
 
         public double Price 
         {
