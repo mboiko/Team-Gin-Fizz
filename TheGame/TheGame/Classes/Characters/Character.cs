@@ -1,36 +1,11 @@
 ﻿namespace TheGame.Classes.Characters
 {
     using System;
-    public abstract class Character
+    public abstract class Character : GameObject
     {
-        private string nickname;
+        public Character(string name)
+            :base(name)
+        { }
 
-        public Character(string nickname)
-        {
-            this.Nickname = nickname;
-        }
-
-        // properties
-        public string Nickname
-        {
-            get { return this.nickname; }
-            set 
-            {
-                if (string.IsNullOrEmpty(value) || value.Length < 2 && value.Length > 15)
-                {
-                    // how we'll visualise this?
-                    throw new ArgumentException(
-                        "Invalid nickname. It must be longer than 2 and shorter than 15 symbols.");
-                }
-                this.nickname = value;
-            }
-        }
-
-        //methods
-        public int GetRandomNumber(int min, int max)
-        {
-            Random randomInt = new Random();
-            return randomInt.Next(min, max + 1);
-        }
     }
 }

@@ -25,7 +25,7 @@
         #region Constructor
 
         public Quest(string name, string description, List<Action> requiremets, List<Item> gifts)
-            : base(name, description)
+            : base(name)
         {
             //TODO: encapsulte and validate these two
             this.requirments = requiremets;
