@@ -6,6 +6,7 @@
     using System.Windows.Forms;
     using TheGame.Classes.Actions;
     using TheGame.Classes.Items;
+    using TheGame.Classes.Characters;
     using TheGame.Classes;
 
     static class Program
@@ -23,6 +24,9 @@
             List<Equipment> equipments = TheGame.Parser.GetAllEquipments();
 
             List<Quest> quests = TheGame.Parser.GetAllQuests();
+
+            Player pesho = new Player("Pesho", "Pesho", "password", 0, 0, someSkills, PlayerType.Gamer, 'm', new List<Item>(), 2, new List<Quest>());
+            pesho.Save();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
