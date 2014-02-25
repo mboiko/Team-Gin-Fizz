@@ -8,6 +8,7 @@
     using TheGame.Classes.Actions;
     using System.Linq;
     using System.IO;
+    using System.Windows.Forms;
 
     public static class Parser
     {
@@ -15,25 +16,31 @@
         {
             List<Skill> skills = new List<Skill>();
 
-            try
-            {
-                StreamReader sr = new StreamReader("../../"+file+".txt");
-                using (sr)
+            //try
+            //{
+                if (File.Exists("../../"+file+".txt"))
                 {
-                    while (!sr.EndOfStream)
+                    StreamReader sr = new StreamReader("../../"+file+".txt");
+                    using (sr)
                     {
-                        string[] line = sr.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                        if (line.Length > 0)
+                        while (!sr.EndOfStream)
                         {
-                            skills.Add(new Skill(line[0], int.Parse(line[1]), int.Parse(line[2])));
+                            string[] line = sr.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                            if (line.Length > 0)
+                            {
+                                skills.Add(new Skill(line[0], int.Parse(line[1]), int.Parse(line[2])));
+                            }
                         }
                     }
                 }
-            }
-            catch (FileNotFoundException)
-            {
-                throw new FileNotFoundException("File Skills.txt is not found.");
-            }
+                else
+                { MessageBox.Show("File " + file + ".txt cannot be found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
+
+            //}
+            //catch (FileNotFoundException)
+            //{
+                // throw new FileNotFoundException("File Skills.txt is not found.");              
+            //}
 
             return skills;
         }
