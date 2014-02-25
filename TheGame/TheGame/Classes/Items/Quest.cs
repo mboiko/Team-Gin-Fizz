@@ -15,13 +15,6 @@
         private Equipment gift;
         private bool isComplеted;
 
-        public bool IsComplеted
-        {
-            get { return isComplеted; }
-            private set { isComplеted = value; }
-        }
-
-        #endregion
 
         #region Constructor
 
@@ -36,6 +29,31 @@
         }
 
         #endregion
+
+        public List<SubMission> Requirments
+        {
+            get
+            {
+                return this.requirments;
+            }
+            private set
+            {
+                if (value == null)
+                {
+                    throw new ArgumentException("Requirments cannot be null");
+                }
+                this.requirments = value;
+            }
+        }
+
+        public bool IsComplеted
+        {
+            get { return isComplеted; }
+            private set { isComplеted = value; }
+        }
+
+        #endregion
+
 
         #region Methods
 
