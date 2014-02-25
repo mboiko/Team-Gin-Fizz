@@ -4,6 +4,7 @@
     using TheGame.Classes;
     using TheGame.Classes.Items;
     using System.Collections.Generic;
+    using TheGame.Classes.Actions;
     using System.IO;
 
     public static class Parсer
@@ -105,6 +106,38 @@
             }
 
             return equipments;
+        }
+
+        public static List<Quest> GetAllQuests()
+        {
+            List<Quest> quests = new List<Quest>();
+            StreamReader sr = new StreamReader("../../Quests.txt");
+            try
+            {
+                using (sr)
+                {
+                    while (!sr.EndOfStream)
+                    {
+                        string[] line = sr.ReadLine().Split(new char[] { '|' }, StringSplitOptions.RemoveEmptyEntries);
+                        if (line.Length > 0)
+	                    {
+                            //quests.Add(new Quest(line[0], line[1],
+                            //    new List<SubMission>() { new SubMission(line[2], line[3], int.Parse(line[4]), int.Parse(line[5]), bool.Parse(line[6])) },
+                            //    new List<Item>() { new Item() }));
+
+
+	                    }
+                      
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                
+                throw;
+            }
+
+            return quests;
         }
 
     }
