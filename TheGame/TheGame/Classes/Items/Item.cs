@@ -9,7 +9,19 @@
         #region Fields and Properties
 
         private List<Skill> bonusSkills;
+        private List<Equipment> equipments;
         private bool isEquiped;
+
+        #region Constructors
+
+        public Item(string name, List<Skill> bonusSkills, bool isEquiped)
+            : base(name)
+        {
+            this.BonusSkills = bonusSkills;
+            this.IsEquiped = isEquiped;
+        }
+
+        #endregion
 
         public bool IsEquiped 
         {
@@ -40,24 +52,35 @@
             }
         }
 
-        #endregion
-        
-        #region Constructors
-
-        public Item(string name, List<Skill> bonusSkills, bool isEquiped)
-            : base(name)
+        public List<Equipment> Equipments
         {
-            this.BonusSkills = bonusSkills;
-            this.IsEquiped = isEquiped;
+            get
+            {
+                return new List<Equipment>(this.equipments);
+            }
+            protected set
+            {
+                if (value == null)
+                {
+                    throw new ArgumentNullException("equipments is null");
+                }
+                this.equipments = value;
+            }
         }
 
         #endregion
-
+        
+        
         #region Methods
 
         public void AddSkill(Skill newSkill)
         {
             this.bonusSkills.Add(newSkill);
+        }
+
+        public void AddEquipment(Equipment equipment)
+        {
+            this.Equipments.Add(equipment);
         }
 
         public override string ToString()
