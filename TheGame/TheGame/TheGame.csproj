@@ -80,6 +80,7 @@
     <Compile Include="Classes\RandomGenerator.cs" />
     <Compile Include="Classes\Skill.cs" />
     <Compile Include="Classes\StaticObject.cs" />
+    <Compile Include="Classes\DayTime.cs" />
     <Compile Include="Classes\Validation.cs" />
     <Compile Include="Classes\IPositionable.cs" />
     <Compile Include="Classes\IControlable.cs" />

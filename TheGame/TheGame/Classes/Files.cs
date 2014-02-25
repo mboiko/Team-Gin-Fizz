@@ -17,20 +17,23 @@ namespace TheGame
 
             string line;
             bool result = false;
-            StreamReader reader = new StreamReader("users.txt");
+            StreamReader reader = new StreamReader("../../users.txt");
             line = reader.ReadToEnd();
             if (line.IndexOf(username) > -1 && line.IndexOf(password) > -1)
             {
                 result = true;
-
+            }
+            else if ((line.IndexOf(username) > -1 && line.IndexOf(password) == -1) || (line.IndexOf(username) == -1 && line.IndexOf(password) > -1))
+            {
+                result = false;
+            }
+            else 
+            {
+                CreateUser(username, password);
             }
 
             reader.Close();
 
-            if (!result)
-            {
-                CreateUser(username, password);
-            }
 
             return result;
         }
@@ -38,7 +41,7 @@ namespace TheGame
         private static void CreateUser(string username, string password)
         {
             System.Windows.Forms.MessageBox.Show(username);
-            StreamWriter writer = new StreamWriter("users.txt", true);
+            StreamWriter writer = new StreamWriter("../../users.txt", true);
             writer.WriteLine(username + "," + password);
             writer.Close();
         }

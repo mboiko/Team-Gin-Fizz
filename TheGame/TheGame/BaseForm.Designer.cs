@@ -65,7 +65,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(983, 489);
+            this.tabPage2.Size = new System.Drawing.Size(983, 603);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Home";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -75,10 +75,10 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPageMap);
-            this.tabControl1.Location = new System.Drawing.Point(13, 126);
+            this.tabControl1.Location = new System.Drawing.Point(13, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(991, 515);
+            this.tabControl1.Size = new System.Drawing.Size(991, 629);
             this.tabControl1.TabIndex = 0;
             // 
             // BaseForm
