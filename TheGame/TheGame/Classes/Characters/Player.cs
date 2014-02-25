@@ -24,7 +24,7 @@ namespace TheGame.Classes.Characters
 
         public void Save()
         {
-            StreamWriter str = new StreamWriter("../../Save.txt", true);
+            StreamWriter str = new StreamWriter("../../SaveFiles/" + Username + ".txt", false);
             try
             {
                 using (str)
@@ -35,21 +35,21 @@ namespace TheGame.Classes.Characters
                     str.WriteLine(Experience);
                     foreach (var skill in Skills)
                     {
-                        str.Write(skill.ToString());
+                        str.WriteLine(skill.ToString());
                     }
                     str.WriteLine();
                     str.WriteLine(PlayerType);
                     str.WriteLine(Gender.ToString());
                     foreach (var equippedItem in EquippedItems)
                     {
-                        str.Write(equippedItem.ToString());
+                        str.WriteLine(equippedItem.ToString());
                     }
                     str.WriteLine();
                     str.WriteLine(EquippedItemsSize);
-                //   foreach (var quest in CurrentQuests)
-                //   {
-                //       str.Write(quest.ToString());
-                //   }
+                   foreach (var quest in CurrentQuests)
+                   {
+                       str.WriteLine(quest.ToString());
+                   }
 
                 }
             }
