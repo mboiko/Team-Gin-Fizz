@@ -12,10 +12,10 @@
         public static List<Skill> GetAllSkills()
         {
             List<Skill> skills = new List<Skill>();
-            StreamReader sr = new StreamReader("../../Skills.txt");
-
+            
             try
             {
+                StreamReader sr = new StreamReader("../../Skills.txt");
                 using (sr)
                 {
                     while (!sr.EndOfStream)
@@ -38,11 +38,11 @@
 
         public static List<Item> GetAllConsumableItems()
         {
-            List<Item> ConsumableItems = new List<Item>();
-            StreamReader sr = new StreamReader("../../ConsumableItems.txt");
+            List<Item> ConsumableItems = new List<Item>();          
 
             try
             {
+                StreamReader sr = new StreamReader("../../ConsumableItems.txt");
                 using (sr)
                 {
                     while (!sr.EndOfStream)
@@ -67,7 +67,7 @@
             }
             catch (FileNotFoundException)
             {
-                throw new FileNotFoundException("File Skills.txt is not found.");
+                throw new FileNotFoundException("File ConsumableItems.txt is not found.");
             }
 
             return ConsumableItems;
@@ -76,10 +76,10 @@
         public static List<Equipment> GetAllEquipments()
         {
             List<Equipment> equipments = new List<Equipment>();
-            StreamReader sr = new StreamReader("../../Equipment.txt");
 
             try
             {
+                StreamReader sr = new StreamReader("../../Equipment.txt");
                 using (sr)
                 {
                     while (!sr.EndOfStream)
@@ -102,7 +102,7 @@
             }
             catch (FileNotFoundException)
             {
-                throw new FileNotFoundException("File Skills.txt is not found.");
+                throw new FileNotFoundException("File Equipment.txt is not found.");
             }
 
             return equipments;
