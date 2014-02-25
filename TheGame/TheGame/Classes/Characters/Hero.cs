@@ -26,6 +26,7 @@
             this.Experience = experience;
             this.PlayerType = playerType;
             this.Gender = gender;
+            this.Skills = skills;
             this.EquippedItems = equippedItems;
             this.EquippedItemsSize = equippedItemsSize;
             this.CurrentQuests = curentQuest;
