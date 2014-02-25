@@ -1,25 +1,25 @@
-C# Programing - Part I|To complete this mission you have to pass all submissions|Primitive data types and variables|Submission of C# Programing - Part I|30|3|false|false
-C# Programing - Part I|To complete this mission you have to pass all submissions|Operators and Expressions|Submission of C# Programing - Part I|30|3|false|false
-C# Programing - Part I|To complete this mission you have to pass all submissions|Console Input / Output|Submission of C# Programing - Part I|30|3|false|false
-C# Programing - Part I|To complete this mission you have to pass all submissions|Conditional Statements|Submission of C# Programing - Part I|30|3|false|false
-C# Programing - Part I|To complete this mission you have to pass all submissions|Loops|Submission of C# Programing - Part I|30|3|false|false
-C# Programing - Part I|To complete this mission you have to pass all submissions|Team Work Project|If you pass this mission you may won a present. This mission is not obligatory.|70|8|false|false
-C# Programing - Part I|To complete this mission you have to pass all submissions|The Exam|This is the last submission of C# Programing - Part I|50|6|false|false
-C# Programing - Part II|To complete this mission you have to pass all submissions|Arrays|Submission of C# Programing - Part II|35|4|false|false
-C# Programing - Part II|To complete this mission you have to pass all submissions|Matrix and Multidimensional arrays|Submission of C# Programing - Part II|35|4|false|false
-C# Programing - Part II|To complete this mission you have to pass all submissions|Methods|Submission of C# Programing - Part II|35|4|false|false
-C# Programing - Part II|To complete this mission you have to pass all submissions|Numeral Systems|Submission of C# Programing - Part II|35|4|false|false
-C# Programing - Part II|To complete this mission you have to pass all submissions|Using Classes and Objects|Submission of C# Programing - Part II|35|4|false|false
-C# Programing - Part II|To complete this mission you have to pass all submissions|Text files|Submission of C# Programing - Part II|35|4|false|false
-C# Programing - Part II|To complete this mission you have to pass all submissions|Exception Handling|Submission of C# Programing - Part II|35|4|false|false
-C# Programing - Part II|To complete this mission you have to pass all submissions|Strings and Text processing|Submission of C# Programing - Part II|35|4|false|false
-C# Programing - Part II|To complete this mission you have to pass all submissions|Team Work Project|If you pass this mission you may won a present. This mission is not obligatory|70|8|false|false
-C# Programing - Part II|To complete this mission you have to pass all submissions|The Exam|This is the last submission of C# Programing - Part II|60|6|false|false
-Object Oriented Programming - "OOP"|To complete this mission you have to pass all submissions|Defining Classes - Part I|Submission of OOP|55|5|false|false
-Object Oriented Programming - "OOP"|To complete this mission you have to pass all submissions|Defining Classes – Part II|Submission of OOP|55|5|false|false
-Object Oriented Programming - "OOP"|To complete this mission you have to pass all submissions|Extension Methods,Lambda Expressions and LINQ|Submission of OOP|55|5|false|false
-Object Oriented Programming - "OOP"|To complete this mission you have to pass all submissions|Object-Oriented Programming Fundamental Principles – Part I|Submission of OOP|55|5|false|false
-Object Oriented Programming - "OOP"|To complete this mission you have to pass all submissions|Object-Oriented Programming Fundamental Principles – Part II|Submission of OOP|55|5|false|false
-Object Oriented Programming - "OOP"|To complete this mission you have to pass all submissions|Common Type System|Submission of OOP|55|5|false|false
-Object Oriented Programming - "OOP"|To complete this mission you have to pass all submissions|Team Work Project|If you pass this mission you may won a present. This mission is not obligatory.|70|8|false|false
-Object Oriented Programming - "OOP"|To complete this mission you have to pass all submissions|The Exam|This is the last submission of C# Programing - Part II|65|2|false|false
+C# Programing - Part I|To complete this mission you have to pass all submissions|Primitive data types and variables|Submission of C# Programing - Part I|30|240|false|false
+C# Programing - Part I|To complete this mission you have to pass all submissions|Operators and Expressions|Submission of C# Programing - Part I|30|240|false|false
+C# Programing - Part I|To complete this mission you have to pass all submissions|Console Input / Output|Submission of C# Programing - Part I|30|240|false|false
+C# Programing - Part I|To complete this mission you have to pass all submissions|Conditional Statements|Submission of C# Programing - Part I|30|240|false|false
+C# Programing - Part I|To complete this mission you have to pass all submissions|Loops|Submission of C# Programing - Part I|30|240|false|false
+C# Programing - Part I|To complete this mission you have to pass all submissions|Team Work Project|If you pass this mission you may won a present. This mission is not obligatory.|70|480|false|false
+C# Programing - Part I|To complete this mission you have to pass all submissions|The Exam|This is the last submission of C# Programing - Part I|50|360|false|false
+C# Programing - Part II|To complete this mission you have to pass all submissions|Arrays|Submission of C# Programing - Part II|35|300|false|false
+C# Programing - Part II|To complete this mission you have to pass all submissions|Matrix and Multidimensional arrays|Submission of C# Programing - Part II|35|300|false|false
+C# Programing - Part II|To complete this mission you have to pass all submissions|Methods|Submission of C# Programing - Part II|35|300|false|false
+C# Programing - Part II|To complete this mission you have to pass all submissions|Numeral Systems|Submission of C# Programing - Part II|35|300|false|false
+C# Programing - Part II|To complete this mission you have to pass all submissions|Using Classes and Objects|Submission of C# Programing - Part II|35|300|false|false
+C# Programing - Part II|To complete this mission you have to pass all submissions|Text files|Submission of C# Programing - Part II|35|300|false|false
+C# Programing - Part II|To complete this mission you have to pass all submissions|Exception Handling|Submission of C# Programing - Part II|35|300|false|false
+C# Programing - Part II|To complete this mission you have to pass all submissions|Strings and Text processing|Submission of C# Programing - Part II|35|300|false|false
+C# Programing - Part II|To complete this mission you have to pass all submissions|Team Work Project|If you pass this mission you may won a present. This mission is not obligatory|70|480|false|false
+C# Programing - Part II|To complete this mission you have to pass all submissions|The Exam|This is the last submission of C# Programing - Part II|60|360|false|false
+Object Oriented Programming - "OOP"|To complete this mission you have to pass all submissions|Defining Classes - Part I|Submission of OOP|55|330|false|false
+Object Oriented Programming - "OOP"|To complete this mission you have to pass all submissions|Defining Classes – Part II|Submission of OOP|55|330|false|false
+Object Oriented Programming - "OOP"|To complete this mission you have to pass all submissions|Extension Methods,Lambda Expressions and LINQ|Submission of OOP|55|330|false|false
+Object Oriented Programming - "OOP"|To complete this mission you have to pass all submissions|Object-Oriented Programming Fundamental Principles – Part I|Submission of OOP|55|330|false|false
+Object Oriented Programming - "OOP"|To complete this mission you have to pass all submissions|Object-Oriented Programming Fundamental Principles – Part II|Submission of OOP|55|300|false|false
+Object Oriented Programming - "OOP"|To complete this mission you have to pass all submissions|Common Type System|Submission of OOP|55|300|false|false
+Object Oriented Programming - "OOP"|To complete this mission you have to pass all submissions|Team Work Project|If you pass this mission you may won a present. This mission is not obligatory.|70|480|false|false
+Object Oriented Programming - "OOP"|To complete this mission you have to pass all submissions|The Exam|This is the last submission of C# Programing - Part II|65|120|false|false

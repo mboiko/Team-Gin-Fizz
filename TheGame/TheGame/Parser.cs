@@ -147,7 +147,7 @@
                     }                   
                 }
             }
-            catch (Exception e)
+            catch (FileNotFoundException e)
             {
                 Console.WriteLine(e.Message);
             }

@@ -12,19 +12,19 @@ Comfortable Chair|Time|0|Energy|0|Efficiancy|10|Creativity|0|Communication|0|Pro
 Comfortable Chair|Time|0|Energy|0|Efficiancy|10|Creativity|0|Communication|0|Programming|0|false
 Comfortable Chair|Time|0|Energy|0|Efficiancy|10|Creativity|0|Communication|0|Programming|0|false
 Comfortable Chair|Time|0|Energy|0|Efficiancy|10|Creativity|0|Communication|0|Programming|0|false
-Book|Time|-120|Energy|0|Efficiancy|2|Creativity|3|Communication|3|Programming|3|false
-Book|Time|-120|Energy|0|Efficiancy|2|Creativity|3|Communication|3|Programming|3|false
-Book|Time|-120|Energy|0|Efficiancy|2|Creativity|3|Communication|3|Programming|3|false
-Book|Time|-120|Energy|0|Efficiancy|2|Creativity|3|Communication|3|Programming|3|false
-Ninja T-Shirt|Time|5|Energy|5|Efficiancy|5|Creativity|5|Communication|5|Programming|5|false
-Ninja Suit|Time|10|Energy|10|Efficiancy|10|Creativity|10|Communication|10|Programming|10|false
+Book|Time|300|Energy|0|Efficiancy|2|Creativity|3|Communication|3|Programming|3|false
+Book|Time|300|Energy|0|Efficiancy|2|Creativity|3|Communication|3|Programming|3|false
+Book|Time|300|Energy|0|Efficiancy|2|Creativity|3|Communication|3|Programming|3|false
+Book|Time|300|Energy|0|Efficiancy|2|Creativity|3|Communication|3|Programming|3|false
+Ninja T-Shirt|Time|0|Energy|5|Efficiancy|5|Creativity|5|Communication|5|Programming|5|false
+Ninja Suit|Time|0|Energy|10|Efficiancy|10|Creativity|10|Communication|10|Programming|10|false
 Comfortable Chair|Time|0|Energy|0|Efficiancy|10|Creativity|0|Communication|0|Programming|0|false
 Comfortable Chair|Time|0|Energy|0|Efficiancy|10|Creativity|0|Communication|0|Programming|0|false
 Comfortable Chair|Time|0|Energy|0|Efficiancy|10|Creativity|0|Communication|0|Programming|0|false
 Comfortable Chair|Time|0|Energy|0|Efficiancy|10|Creativity|0|Communication|0|Programming|0|false
-Book|Time|-120|Energy|0|Efficiancy|2|Creativity|3|Communication|3|Programming|3|false
-Book|Time|-120|Energy|0|Efficiancy|2|Creativity|3|Communication|3|Programming|3|false
-Book|Time|-120|Energy|0|Efficiancy|2|Creativity|3|Communication|3|Programming|3|false
-Book|Time|-120|Energy|0|Efficiancy|2|Creativity|3|Communication|3|Programming|3|false
+Book|Time|300|Energy|0|Efficiancy|2|Creativity|3|Communication|3|Programming|3|false
+Book|Time|300|Energy|0|Efficiancy|2|Creativity|3|Communication|3|Programming|3|false
+Book|Time|300|Energy|0|Efficiancy|2|Creativity|3|Communication|3|Programming|3|false
+Book|Time|300|Energy|0|Efficiancy|2|Creativity|3|Communication|3|Programming|3|false
 Certificates|Time|0|Energy|0|Efficiancy|10|Creativity|10|Communication|5|Programming|10|false
 
