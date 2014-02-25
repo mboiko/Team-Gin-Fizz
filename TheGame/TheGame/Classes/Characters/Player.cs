@@ -22,6 +22,11 @@ namespace TheGame.Classes.Characters
             this.Password = password;
         }
 
+        public void AddEquipment(Equipment equipment)
+        {
+            this.EquippedItems.Add(equipment);
+        }
+
         public void Save()
         {
             StreamWriter str = new StreamWriter("../../SaveFiles/" + Username + ".txt", false);

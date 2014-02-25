@@ -9,7 +9,6 @@
         #region Fields and Properties
 
         private List<Skill> bonusSkills;
-        private List<Equipment> equipments;
         private bool isEquiped;
 
         #region Constructors
@@ -52,22 +51,6 @@
             }
         }
 
-        public List<Equipment> Equipments
-        {
-            get
-            {
-                return new List<Equipment>(this.equipments);
-            }
-            protected set
-            {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("equipments is null");
-                }
-                this.equipments = value;
-            }
-        }
-
         #endregion
         
         
@@ -76,11 +59,6 @@
         public void AddSkill(Skill newSkill)
         {
             this.bonusSkills.Add(newSkill);
-        }
-
-        public void AddEquipment(Equipment equipment)
-        {
-            this.Equipments.Add(equipment);
         }
 
         public override string ToString()
