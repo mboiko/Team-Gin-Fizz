@@ -25,20 +25,56 @@ namespace TheGame
         {
             //BaseForm form1 = new BaseForm();
             //form1.Show();
-          
-           if(!Files.ReadUsersFromFile(this.txtUserName.Text, this.txtPassword.Text))
+            if (Validation.IsCorrectLogin(this.txtUserName.Text.ToString(), this.txtPassword.Text.ToString()).Length > 1)
+            {
+                this.lblErrorMessage.Text = Validation.IsCorrectLogin(this.txtUserName.Text.ToString(), this.txtPassword.Text.ToString());
+                return;
+            }
+
+           if(Files.ReadUsersFromFile(this.txtUserName.Text, this.txtPassword.Text)==false)
             {
               this.lblErrorMessage.Text = "User name or Password are incorrect!";
             }
+           else if (Files.ReadUsersFromFile(this.txtUserName.Text, this.txtPassword.Text))
+           {
+               if (Files.HaveAHero(this.txtUserName.Text.Trim()))
+               {
+                   BaseForm form = new BaseForm();
+                   form.Show();
+               }
+               else
+               {
+                   Registration form = new Registration();
+                   form.Show();
+               }
 
-            this.lblErrorMessage.Text = Validation.IsCorrectLogin(this.txtUserName.Text.ToString(), this.txtPassword.Text.ToString());
+               
+               this.Hide();
+               
+           }
+
+           
         }
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-              Registration registration = new Registration();
-              registration.Show();
-              this.Hide();
+            if (Files.ReadUsersFromFile(this.txtUserName.Text, this.txtPassword.Text))
+            {
+                this.lblErrorMessage.Text = "This user already exists";
+            }
+            else
+            {
+                this.lblErrorMessage.Text = Validation.IsCorrectLogin(this.txtUserName.Text.ToString(), this.txtPassword.Text.ToString());
+                if (this.lblErrorMessage.Text.Trim() == "")
+                {
+                    Files.CreateUser(txtUserName.Text.Trim(), txtPassword.Text.Trim());
+                    this.lblErrorMessage.Text = "You have been registered! You may login !";
+                }
+                
+            }
+              //Registration registration = new Registration();
+              //registration.Show();
+              //this.Hide();
         }
 
       

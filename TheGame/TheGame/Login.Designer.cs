@@ -38,7 +38,7 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.lblErrorMessage = new System.Windows.Forms.Label();
             this.btnRegister = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -76,15 +76,15 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Password";
             // 
-            // button1
+            // btnLogin
             // 
-            this.button1.Location = new System.Drawing.Point(89, 314);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(114, 23);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "LOGIN";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            this.btnLogin.Location = new System.Drawing.Point(89, 314);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(114, 23);
+            this.btnLogin.TabIndex = 2;
+            this.btnLogin.Text = "LOGIN";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // lblErrorMessage
             // 
@@ -114,7 +114,7 @@
             this.ClientSize = new System.Drawing.Size(577, 428);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.lblErrorMessage);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPassword);
@@ -134,7 +134,7 @@
         private TextBox txtPassword;
         private Label label1;
         private Label label2;
-        private Button button1;
+        private Button btnLogin;
         private Label lblErrorMessage;
         private Button btnRegister;
     }

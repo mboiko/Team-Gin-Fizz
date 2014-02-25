@@ -62,7 +62,7 @@
 
         public override string ToString()
         {
-            return string.Format("{0} {1} {2}", this.Name, this.BaseSkillValue, this.SkillCurrentValue);
+            return string.Format("{0}\t\t{1}\t\t{2}", this.Name, this.BaseSkillValue, this.SkillCurrentValue);
         }
 
         public override bool Equals(object obj)

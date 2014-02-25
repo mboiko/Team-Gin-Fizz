@@ -4,18 +4,19 @@
     using TheGame.Classes;
     using TheGame.Classes.Items;
     using System.Collections.Generic;
+    using System.Collections;
     using TheGame.Classes.Actions;
     using System.IO;
 
     public static class Parser
     {
-        public static List<Skill> GetAllSkills()
+        public static List<Skill> GetAllSkills(string file = "Skills")
         {
             List<Skill> skills = new List<Skill>();
-            
+
             try
             {
-                StreamReader sr = new StreamReader("../../Skills.txt");
+                StreamReader sr = new StreamReader("../../"+file+".txt");
                 using (sr)
                 {
                     while (!sr.EndOfStream)
