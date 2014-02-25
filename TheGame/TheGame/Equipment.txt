@@ -1,0 +1,30 @@
+PC Mouse|Time|0|Energy|0|Efficiancy|4|Creativity|0|Communication|0|Programming|0|false
+PC Mouse (3 button + Scroll)|Time|0|Energy|0|Efficiancy|4|Creativity|0|Communication|0|Programming|0|false
+PC Mouse (5 button + Scroll)|Time|0|Energy|0|Efficiancy|8|Creativity|0|Communication|0|Programming|0|false
+PC Keyboard|Time|0|Energy|0|Efficiancy|4|Creativity|0|Communication|0|Programming|0|false
+PC Keyboard|Time|0|Energy|0|Efficiancy|8|Creativity|0|Communication|0|Programming|0|false
+PC Keyboard|Time|0|Energy|0|Efficiancy|12|Creativity|0|Communication|0|Programming|0|false
+PC Monitor|Time|0|Energy|0|Efficiancy|10|Creativity|0|Communication|0|Programming|0|false
+Glasses|Time|0|Energy|0|Efficiancy|5|Creativity|0|Communication|0|Programming|0|false
+Powerful Computer|Time|0|Energy|0|Efficiancy|15|Creativity|0|Communication|5|Programming|0|false
+Powerful Computer|Time|0|Energy|0|Efficiancy|15|Creativity|0|Communication|5|Programming|0|false
+Comfortable Chair|Time|0|Energy|0|Efficiancy|10|Creativity|0|Communication|0|Programming|0|false
+Comfortable Chair|Time|0|Energy|0|Efficiancy|10|Creativity|0|Communication|0|Programming|0|false
+Comfortable Chair|Time|0|Energy|0|Efficiancy|10|Creativity|0|Communication|0|Programming|0|false
+Comfortable Chair|Time|0|Energy|0|Efficiancy|10|Creativity|0|Communication|0|Programming|0|false
+Book|Time|-120|Energy|0|Efficiancy|2|Creativity|3|Communication|3|Programming|3|false
+Book|Time|-120|Energy|0|Efficiancy|2|Creativity|3|Communication|3|Programming|3|false
+Book|Time|-120|Energy|0|Efficiancy|2|Creativity|3|Communication|3|Programming|3|false
+Book|Time|-120|Energy|0|Efficiancy|2|Creativity|3|Communication|3|Programming|3|false
+Ninja T-Shirt|Time|5|Energy|5|Efficiancy|5|Creativity|5|Communication|5|Programming|5|false
+Ninja Suit|Time|10|Energy|10|Efficiancy|10|Creativity|10|Communication|10|Programming|10|false
+Comfortable Chair|Time|0|Energy|0|Efficiancy|10|Creativity|0|Communication|0|Programming|0|false
+Comfortable Chair|Time|0|Energy|0|Efficiancy|10|Creativity|0|Communication|0|Programming|0|false
+Comfortable Chair|Time|0|Energy|0|Efficiancy|10|Creativity|0|Communication|0|Programming|0|false
+Comfortable Chair|Time|0|Energy|0|Efficiancy|10|Creativity|0|Communication|0|Programming|0|false
+Book|Time|-120|Energy|0|Efficiancy|2|Creativity|3|Communication|3|Programming|3|false
+Book|Time|-120|Energy|0|Efficiancy|2|Creativity|3|Communication|3|Programming|3|false
+Book|Time|-120|Energy|0|Efficiancy|2|Creativity|3|Communication|3|Programming|3|false
+Book|Time|-120|Energy|0|Efficiancy|2|Creativity|3|Communication|3|Programming|3|false
+Certificates|Time|0|Energy|0|Efficiancy|10|Creativity|10|Communication|5|Programming|10|false
+
