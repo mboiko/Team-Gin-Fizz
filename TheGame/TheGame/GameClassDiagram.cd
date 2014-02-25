@@ -17,7 +17,7 @@
   <Class Name="TheGame.Login" Collapsed="true">
     <Position X="11.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAgAAAAQACAAABAAAACAAAACAIAIAAgAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAgAAAAQACAAABAAAACAAAACAIAIAAgEAAAAAAAAAAA=</HashCode>
       <FileName>Login.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -38,21 +38,22 @@
   <Class Name="TheGame.Classes.Items.Item" Collapsed="true">
     <Position X="0.5" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAACAQAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Items\Item.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="TheGame.Classes.Items.SellableItem" Collapsed="true">
     <Position X="0.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAABAAAAAQAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Items\SellableItem.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="TheGame.Classes.Skill" Collapsed="true">
     <Position X="4.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEACAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAgAAAAAAAAAAAAEgAAAAAwAIAAMAIAAAAAAAAAAAiA=</HashCode>
       <FileName>Classes\Skill.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -71,7 +72,7 @@
   <Class Name="TheGame.Classes.GameStats" Collapsed="true">
     <Position X="6.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>gAAAABAAAAAAAEAAAAAAACEABAEIAAAACAAABAAAEBA=</HashCode>
+      <HashCode>kAAAARAAAAAAAAAAAQAABCkABAEsAACFQAAAhEAAEAE=</HashCode>
       <FileName>Classes\GameStats.cs</FileName>
     </TypeIdentifier>
   </Class>

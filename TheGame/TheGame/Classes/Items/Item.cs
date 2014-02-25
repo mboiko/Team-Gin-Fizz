@@ -3,8 +3,9 @@
     using System;
     using System.Collections.Generic;
     using System.Text;
+    using TheGame.Classes.Characters;
 
-    public class Item : GameObject
+    public class Item : GameObject, IUseble
     {
         #region Fields and Properties
 
@@ -96,6 +97,14 @@
         //{
         //    return this.Name.GetHashCode() ^ this.Description.GetHashCode();
         //}
+
+        public void UseItem(Hero hero)
+        {
+            for (int skill = 0; skill < hero.Skills.Count; skill++)
+            {
+                hero.Skills[skill].SkillCurrentValue += BonusSkills[skill].SkillCurrentValue;
+            }
+        }
 
         #endregion
     }

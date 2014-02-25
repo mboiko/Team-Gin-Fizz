@@ -16,11 +16,13 @@
         [STAThread]
         static void Main()
         {
-            List<Skill> someSkills = TheGame.Parсer.GetAllSkills();
+            List<Skill> someSkills = TheGame.Parser.GetAllSkills();
 
-            List<Item> someitem = TheGame.Parсer.GetAllConsumableItems();
+            List<Item> someitem = TheGame.Parser.GetAllConsumableItems();
 
-            List<Equipment> equipments = TheGame.Parсer.GetAllEquipments();
+            List<Equipment> equipments = TheGame.Parser.GetAllEquipments();
+
+            List<Quest> quests = TheGame.Parser.GetAllQuests();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

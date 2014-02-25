@@ -34,6 +34,11 @@
 
         #region Constructor
 
+        public GameObject()
+        {
+
+        }
+
         public GameObject(string name)
         {
             this.Name = name;

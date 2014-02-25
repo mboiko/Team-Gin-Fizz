@@ -12,7 +12,7 @@
 
         public string Description { get; private set; }
         private List<SubMission> requirments;
-        private List<Item> gifts;
+        private Equipment gift;
         private bool isComplеted;
 
         public bool IsComplеted
@@ -25,14 +25,14 @@
 
         #region Constructor
 
-        public Quest(string name, string description, List<SubMission> requiremets, List<Item> gifts)
+        public Quest(string name, string description, List<SubMission> requiremets, Equipment gift, bool isComplete)
             : base(name)
         {
             //TODO: encapsulte and validate these two
             this.requirments = requiremets;
-            this.gifts = gifts;
+            this.gift = gift;
             this.Description = description;
-            this.isComplеted = false;
+            this.IsComplеted = isComplete;
         }
 
         #endregion
@@ -40,11 +40,11 @@
         #region Methods
 
         //if the quest isn't complited returns null
-        public List<Item> GetReward()
+        public Item GetReward()
         {
             if (this.IsComplеted)
             {
-                return this.gifts;
+                return this.gift;
             }
             return null;
         }

@@ -25,7 +25,14 @@
             }
             set
             {
-                this.skillCurrentValue = value;
+                if (!(value + skillCurrentValue > BaseSkillValue))
+                {
+                    this.skillCurrentValue += value;
+                } 
+                else
+                {
+                    this.skillCurrentValue = BaseSkillValue;
+                }
             }
         }
 

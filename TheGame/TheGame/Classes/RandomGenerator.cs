@@ -7,7 +7,6 @@ namespace TheGame.Classes
 {
     public static class RandomGenerator
     {
-        //methods
         public static int GetRandomNumber(int min, int max)
         {
             Random randomInt = new Random();

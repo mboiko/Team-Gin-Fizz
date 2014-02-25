@@ -7,7 +7,7 @@
     using TheGame.Classes.Actions;
     using System.IO;
 
-    public static class Parсer
+    public static class Parser
     {
         public static List<Skill> GetAllSkills()
         {
@@ -110,30 +110,30 @@
 
         public static List<Quest> GetAllQuests()
         {
+            List<Equipment> Equipments = GetAllEquipments();
             List<Quest> quests = new List<Quest>();
-            StreamReader sr = new StreamReader("../../Quests.txt");
             try
             {
+                StreamReader sr = new StreamReader("../../Quests.txt");
                 using (sr)
                 {
                     while (!sr.EndOfStream)
                     {
+                        string getline = sr.ReadLine();
+                        Equipment gift = Equipments[RandomGenerator.GetRandomNumber(0, Equipments.Count)];
                         string[] line = sr.ReadLine().Split(new char[] { '|' }, StringSplitOptions.RemoveEmptyEntries);
                         if (line.Length > 0)
 	                    {
-                            //quests.Add(new Quest(line[0], line[1],
-                            //    new List<SubMission>() { new SubMission(line[2], line[3], int.Parse(line[4]), int.Parse(line[5]), bool.Parse(line[6])) },
-                            //    new List<Item>() { new Item() }));
-
-
-	                    }
-                      
-                    }
+                            quests.Add(new Quest(line[0], line[1],
+                                new List<SubMission>() { new SubMission(line[2], line[3], int.Parse(line[4]), int.Parse(line[5]), bool.Parse(line[6])) },
+                                gift, bool.Parse(line[7])));
+	                    }                   
+                    }                   
                 }
             }
             catch (Exception)
             {
-                
+
                 throw;
             }
 

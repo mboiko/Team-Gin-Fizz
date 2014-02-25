@@ -75,6 +75,7 @@
     <Compile Include="Classes\Exceptions\NotEnoughTimeException.cs" />
     <Compile Include="Classes\Files.cs" />
     <Compile Include="Classes\GameStats.cs" />
+    <Compile Include="Classes\Items\IUseble.cs" />
     <Compile Include="Classes\Items\SellableItem.cs" />
     <Compile Include="Classes\Items\Item.cs" />
     <Compile Include="Classes\RandomGenerator.cs" />
@@ -102,7 +103,7 @@
     <Compile Include="Classes\PlayerType.cs" />
     <Compile Include="Classes\Point2D.cs" />
     <Compile Include="Classes\PositionableObject.cs" />
-    <Compile Include="Parсer.cs" />
+    <Compile Include="Parser.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Classes\Items\Quest.cs" />
