@@ -10,7 +10,8 @@
     {
         #region Fields and Properties
 
-        private List<Action> requirments;
+        public string Description { get; private set; }
+        private List<SubMission> requirments;
         private List<Item> gifts;
         private bool isComplеted;
 
@@ -24,13 +25,13 @@
 
         #region Constructor
 
-        public Quest(string name, string description, List<Action> requiremets, List<Item> gifts)
+        public Quest(string name, string description, List<SubMission> requiremets, List<Item> gifts)
             : base(name)
         {
             //TODO: encapsulte and validate these two
             this.requirments = requiremets;
             this.gifts = gifts;
-
+            this.Description = description;
             this.isComplеted = false;
         }
 

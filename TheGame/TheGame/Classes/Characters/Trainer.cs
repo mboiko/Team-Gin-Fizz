@@ -25,7 +25,7 @@
             }
 
             return new Quest("Game Over", "Turn off the game and try your skills at the real Telerik Academy!",
-                new List<Action>(), new List<Items.Item>());
+                new List<SubMission>(), new List<Items.Item>());
         }
     }
 }

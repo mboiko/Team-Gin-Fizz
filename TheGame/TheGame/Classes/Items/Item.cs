@@ -62,7 +62,7 @@
 
         public override string ToString()
         {
-            return string.Format("{0}I{1}I{2}", this.Name, string.Join("|", this.BonusSkills), this.IsEquiped);
+            return string.Format("{0}|{1}|{2}", this.Name, string.Join("|", this.BonusSkills), this.IsEquiped);
         }
 
         public override bool Equals(object obj)
