@@ -11,6 +11,17 @@
         private List<Skill> bonusSkills;
         private bool isEquiped;
 
+        #region Constructors
+
+        public Item(string name, List<Skill> bonusSkills, bool isEquiped)
+            : base(name)
+        {
+            this.BonusSkills = bonusSkills;
+            this.IsEquiped = isEquiped;
+        }
+
+        #endregion
+
         public bool IsEquiped 
         {
             get
@@ -42,17 +53,7 @@
 
         #endregion
         
-        #region Constructors
-
-        public Item(string name, List<Skill> bonusSkills, bool isEquiped)
-            : base(name)
-        {
-            this.BonusSkills = bonusSkills;
-            this.IsEquiped = isEquiped;
-        }
-
-        #endregion
-
+        
         #region Methods
 
         public void AddSkill(Skill newSkill)

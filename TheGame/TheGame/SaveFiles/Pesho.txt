@@ -1,0 +1,16 @@
+Pesho
+Pesho
+0
+0
+Time 24 0
+Energy 100 100
+Efficiancy 100 100
+Creativity 100 100
+Communication 100 100
+Programming 100 100
+Motivation 100 100
+
+Gamer
+m
+
+2

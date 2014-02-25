@@ -3,6 +3,7 @@
     using System.Collections.Generic;
     using TheGame.Classes.Actions;
     using TheGame.Classes.Items;
+    using TheGame.Classes.Exceptions;
 
     public class Hero : Character
     {
@@ -26,6 +27,7 @@
             this.Experience = experience;
             this.PlayerType = playerType;
             this.Gender = gender;
+            this.Skills = skills;
             this.EquippedItems = equippedItems;
             this.EquippedItemsSize = equippedItemsSize;
             this.CurrentQuests = curentQuest;
@@ -34,6 +36,29 @@
         public void GetQuest(Quest quest)
         {
             CurrentQuests.Add(quest);
+        }
+
+        public void CompleteQuest(Quest quest)
+        {
+            for (int i = 0; i < quest.Requirments.Count ; i++)
+            {
+                if (quest.Requirments[i].EnergyCost < this.Skills[1].BaseSkillValue
+                    && quest.Requirments[i].TimeCost < this.Skills[0].BaseSkillValue)
+	            {
+                    quest.Requirments[i].IsCompleted = true;
+	            }
+                else
+                {
+                    if (quest.Requirments[i].EnergyCost > this.Skills[1].BaseSkillValue)
+                    {
+                        throw new NotEnoughEnergyException("Not enough energy");
+                    }
+                    else
+                    {
+                        throw new NotEnoughTimeException("Not enough time");
+                    }
+                }
+            }
         }
 
         public void UseItem(Item item)

@@ -13,19 +13,38 @@
             this.questToGive = quests;
         }
 
-        //constructor
-        public Quest GiveQuest()
+        public bool CheckQuestCompletion(Player player)
         {
-            for (int i = 0; i < questToGive.Count; i++)
+            foreach (Quest quest in player.CurrentQuests)
             {
-                if (!questToGive[i].IsComplеted)
+                if (!quest.IsComplеted)
                 {
-                    return questToGive[i];
+                    return false;
                 }
             }
 
-            return new Quest("Game Over", "Turn off the game and try your skills at the real Telerik Academy!",
-                new List<SubMission>(), null, false);
+            return true;
+        }
+
+        public Quest GiveQuest(Player player)
+        {
+            if (CheckQuestCompletion(player))
+            {
+                for (int i = 0; i < questToGive.Count; i++)
+                {
+                    if (!questToGive[i].IsComplеted)
+                    {
+                        return questToGive[i];
+                    }
+                }
+
+                return new Quest("Game Over", "Turn off the game and try your skills at the real Telerik Academy!",
+                new List<SubMission>(), null, false);            
+            }
+            else
+            {
+                return null;
+            }
         }
     }
 }

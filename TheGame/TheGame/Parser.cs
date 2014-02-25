@@ -6,6 +6,7 @@
     using System.Collections.Generic;
     using System.Collections;
     using TheGame.Classes.Actions;
+    using System.Linq;
     using System.IO;
 
     public static class Parser
@@ -120,10 +121,25 @@
                 {
                     while (!sr.EndOfStream)
                     {
-                        string getline = sr.ReadLine();
-                        Equipment gift = Equipments[RandomGenerator.GetRandomNumber(0, Equipments.Count)];
-                        string[] line = sr.ReadLine().Split(new char[] { '|' }, StringSplitOptions.RemoveEmptyEntries);
-                        if (line.Length > 0)
+                        List<string> line = sr.ReadLine().Split(new char[] { '|' }, StringSplitOptions.RemoveEmptyEntries).ToList();
+                        int start = -1, end = -1;
+                        if (!line.Contains("Team Work Project") && !line.Contains("The Exam"))
+                        {
+                            start = 0;
+                            end = 7;
+                        }
+                        else if (line.Contains("Team Work Project"))
+                        {
+                            start = 8;
+                            end = 19;
+                        }
+                        else if (line.Contains("The Exam"))
+                        {
+                            start = 20;
+                            end = 28;
+                        }
+                        Equipment gift = Equipments[RandomGenerator.GetRandomNumber(start, end)];
+                        if (line.Count > 0)
 	                    {
                             quests.Add(new Quest(line[0], line[1],
                                 new List<SubMission>() { new SubMission(line[2], line[3], int.Parse(line[4]), int.Parse(line[5]), bool.Parse(line[6])) },
@@ -132,14 +148,11 @@
                     }                   
                 }
             }
-            catch (Exception)
+            catch (FileNotFoundException e)
             {
-
-  
+                Console.WriteLine(e.Message);
             }
-
             return quests;
         }
-
     }
 }
