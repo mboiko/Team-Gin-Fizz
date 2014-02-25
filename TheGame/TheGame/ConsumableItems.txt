@@ -1,0 +1,14 @@
+Energy Drink|Time|0|Energy|30|Efficiancy|0|Creativity|0|Communication|5|Programming|0|Motivation|5|false
+Juice|Time|0|Energy|20|Efficiancy|0|Creativity|0|Communication|0|Programming|0|Motivation|0|false
+Tea|Time|0|Energy|15|Efficiancy|5|Creativity|0|Communication|3|Programming|0|Motivation|0|false
+Chocolate|Time|0|Energy|15|Efficiancy|5|Creativity|3|Communication|3|Programming|3|Motivation|5|false
+Coffee|Time|0|Energy|15|Efficiancy|10|Creativity|0|Communication|3|Programming|0|Motivation|0|false
+Sandwich|Time|0|Energy|20|Efficiancy|0|Creativity|0|Communication|0|Programming|0|Motivation|0|false
+Burger|Time|0|Energy|22|Efficiancy|0|Creativity|0|Communication|0|Programming|0|Motivation|0|false
+Fruits|Time|0|Energy|15|Efficiancy|5|Creativity|5|Communication|5|Programming|5|Motivation|5|false
+Gin Fizz|Time|10|Energy|-5|Efficiancy|-5|Creativity|-5|Communication|1|Programming|-5|Motivation|-10|false
+Beer|Time|5|Energy|-2|Efficiancy|-2|Creativity|-2|Communication|1|Programming|-2|Motivation|-2|false
+Whiskey|Time|15|Energy|10|Efficiancy|-10|Creativity|-10|Communication|5|Programming|-10|Motivation|-10|false
+Breakfast|Time|15|Energy|50|Efficiancy|50|Creativity|50|Communication|50|Programming|50|Motivation|50|false
+Lunch|Time|20|Energy|50|Efficiancy|50|Creativity|50|Communication|50|Programming|50|Motivation|50|false
+Dinner|Time|20|Energy|50|Efficiancy|50|Creativity|50|Communication|50|Programming|50|Motivation|50|false

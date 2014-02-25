@@ -10,7 +10,8 @@ namespace TheGame
     {
         public static bool ReadUsersFromFile(string username, string password)
         {
-            if (!File.Exists("users.txt"))
+            string login = username.Trim() +","+ password.Trim();
+            if (!File.Exists("../../users.txt"))
             {
                 CreateUser(username, password);
             }
@@ -19,19 +20,12 @@ namespace TheGame
             bool result = false;
             StreamReader reader = new StreamReader("../../users.txt");
             line = reader.ReadToEnd();
-            if (line.IndexOf(username) > -1 && line.IndexOf(password) > -1)
+
+            if (line.IndexOf(login) > -1)
             {
                 result = true;
             }
-            else if ((line.IndexOf(username) > -1 && line.IndexOf(password) == -1) || (line.IndexOf(username) == -1 && line.IndexOf(password) > -1))
-            {
-                result = false;
-            }
-            else 
-            {
-                CreateUser(username, password);
-            }
-
+           
             reader.Close();
 
 
@@ -40,11 +34,28 @@ namespace TheGame
 
         private static void CreateUser(string username, string password)
         {
-            System.Windows.Forms.MessageBox.Show(username);
+           // System.Windows.Forms.MessageBox.Show(username);
             StreamWriter writer = new StreamWriter("../../users.txt", true);
-            writer.WriteLine(username + "," + password);
+            writer.WriteLine((username +","+ password).Trim());
             writer.Close();
         }
 
+        public static string GetSkills(string hero)
+        {
+            //if (!File.Exists("../../"+hero))
+            //{
+             
+            
+
+            string line;
+            bool result = false;
+            StreamReader reader = new StreamReader("../../"+hero+".txt");
+            line = reader.ReadToEnd();
+
+             reader.Close();
+
+
+            return line.ToString();
+        }
     }
 }

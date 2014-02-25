@@ -134,7 +134,7 @@
             catch (Exception)
             {
 
-                throw;
+  
             }
 
             return quests;
