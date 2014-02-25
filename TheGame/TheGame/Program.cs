@@ -26,7 +26,7 @@
             List<Quest> quests = TheGame.Parser.GetAllQuests();
 
             Player pesho = new Player("Pesho", "Pesho", "password", 0, 0, someSkills, PlayerType.Gamer, 'm', new List<Item>(), 2, new List<Quest>());
-            pesho.Save();
+           // pesho.Save();
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

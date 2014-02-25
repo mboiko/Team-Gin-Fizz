@@ -2,7 +2,6 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Text;
     using TheGame.Classes.Characters;
 
     public class Item : GameObject, IUseble
