@@ -71,6 +71,11 @@
             return this.requirments.Count(req => req.IsCompleted) == this.requirments.Count;
         }
 
+        public override string ToString()
+        {
+            return string.Format("{0}|{1}|{2}|{3}|{4}", this.Name, this.Description, string.Join("|", requirments), this.gift.ToString(), this.IsComplеted);
+        }
+        
         #endregion
     }
 }
