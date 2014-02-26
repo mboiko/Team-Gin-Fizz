@@ -147,7 +147,7 @@ namespace TheGame
                 List<Classes.Items.Item> itemList = new List<Classes.Items.Item>();
                 List<Classes.Actions.Quest> quests = new List<Classes.Actions.Quest>();
                 Player player = new Player(this.txtHeroName.Text,this.userName,0,0,skills,playerType,this.gender,new List<Item>(), 2, new List<Quest>() );
-                player.Save();
+                Parser.SavePlayer(player);
                 BaseForm form = new BaseForm();
                 form.Show();
                 this.Hide();
