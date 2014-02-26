@@ -65,6 +65,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Building.cs" />
     <Compile Include="Classes\Actions\MoveAction.cs" />
     <Compile Include="Classes\Characters\Bot.cs" />
     <Compile Include="Classes\Characters\Character.cs" />
@@ -72,6 +73,7 @@
     <Compile Include="Classes\Characters\EvilBot.cs" />
     <Compile Include="Classes\Characters\Hero.cs" />
     <Compile Include="Classes\Characters\Player.cs" />
+    <Compile Include="Classes\Characters\Salesman.cs" />
     <Compile Include="Classes\Characters\Trainer.cs" />
     <Compile Include="Classes\Exceptions\NotEnoughEnergyException.cs" />
     <Compile Include="Classes\Exceptions\NotEnoughTimeException.cs" />
