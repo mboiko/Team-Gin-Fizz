@@ -155,7 +155,7 @@ namespace TheGame
             }
             else
             {
-                MessageBox.Show("The name can't be less 2 characters", "Too short name");
+                MessageBox.Show("The name can't be less 3 characters", "Too short name");
             }
         }
 

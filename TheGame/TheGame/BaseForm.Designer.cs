@@ -28,10 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaseForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabHome = new System.Windows.Forms.TabPage();
             this.panelTelerik = new System.Windows.Forms.Panel();
             this.lblTelerikInfo = new System.Windows.Forms.Label();
@@ -41,9 +42,6 @@
             this.dgPlayerStats = new System.Windows.Forms.DataGridView();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgChat = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.picHero = new System.Windows.Forms.PictureBox();
             this.gridQuests = new System.Windows.Forms.DataGridView();
             this.lblSkills = new System.Windows.Forms.Label();
@@ -55,13 +53,15 @@
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column11 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.lblChooseMission = new System.Windows.Forms.Label();
+            this.lblChat = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.lstChat = new System.Windows.Forms.ListBox();
             this.tabHome.SuspendLayout();
             this.panelTelerik.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTelerik)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.panelHero.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgPlayerStats)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgChat)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHero)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridQuests)).BeginInit();
             this.SuspendLayout();
@@ -134,9 +134,10 @@
             // panelHero
             // 
             this.panelHero.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panelHero.Controls.Add(this.lstChat);
+            this.panelHero.Controls.Add(this.lblChat);
             this.panelHero.Controls.Add(this.lblSkills);
             this.panelHero.Controls.Add(this.dgPlayerStats);
-            this.panelHero.Controls.Add(this.dgChat);
             this.panelHero.Controls.Add(this.picHero);
             this.panelHero.Location = new System.Drawing.Point(3, 34);
             this.panelHero.Name = "panelHero";
@@ -172,36 +173,6 @@
             this.Column4.HeaderText = "Value";
             this.Column4.Name = "Column4";
             this.Column4.ReadOnly = true;
-            // 
-            // dgChat
-            // 
-            this.dgChat.AllowUserToAddRows = false;
-            this.dgChat.AllowUserToDeleteRows = false;
-            this.dgChat.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
-            this.dgChat.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            this.dgChat.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgChat.ColumnHeadersVisible = false;
-            this.dgChat.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column2});
-            this.dgChat.GridColor = System.Drawing.Color.OliveDrab;
-            this.dgChat.Location = new System.Drawing.Point(3, 450);
-            this.dgChat.Name = "dgChat";
-            this.dgChat.ReadOnly = true;
-            this.dgChat.Size = new System.Drawing.Size(284, 150);
-            this.dgChat.TabIndex = 1;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "User";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Message";
-            this.Column2.Name = "Column2";
-            this.Column2.ReadOnly = true;
             // 
             // picHero
             // 
@@ -250,8 +221,8 @@
             // 
             // Column5
             // 
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle4;
             this.Column5.HeaderText = "id";
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
@@ -259,8 +230,8 @@
             // 
             // Column6
             // 
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle5;
             this.Column6.HeaderText = "Type";
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
@@ -268,8 +239,8 @@
             // 
             // Column7
             // 
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle6;
             this.Column7.HeaderText = "Description";
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
@@ -320,6 +291,30 @@
             this.lblChooseMission.TabIndex = 4;
             this.lblChooseMission.Text = "Choose a quest";
             // 
+            // lblChat
+            // 
+            this.lblChat.AutoSize = true;
+            this.lblChat.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblChat.Location = new System.Drawing.Point(10, 418);
+            this.lblChat.Name = "lblChat";
+            this.lblChat.Size = new System.Drawing.Size(43, 18);
+            this.lblChat.TabIndex = 4;
+            this.lblChat.Text = "Chat";
+            // 
+            // timer1
+            // 
+            this.timer1.Interval = 2000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // lstChat
+            // 
+            this.lstChat.FormattingEnabled = true;
+            this.lstChat.Location = new System.Drawing.Point(4, 440);
+            this.lstChat.MultiColumn = true;
+            this.lstChat.Name = "lstChat";
+            this.lstChat.Size = new System.Drawing.Size(289, 147);
+            this.lstChat.TabIndex = 5;
+            // 
             // BaseForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -339,7 +334,6 @@
             this.panelHero.ResumeLayout(false);
             this.panelHero.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgPlayerStats)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dgChat)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picHero)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridQuests)).EndInit();
             this.ResumeLayout(false);
@@ -357,9 +351,6 @@
         private System.Windows.Forms.Panel panelTelerik;
         private System.Windows.Forms.Panel panelHero;
         private System.Windows.Forms.PictureBox picHero;
-        private System.Windows.Forms.DataGridView dgChat;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridView dgPlayerStats;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
@@ -373,6 +364,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewButtonColumn Column11;
         private System.Windows.Forms.Label lblChooseMission;
+        private System.Windows.Forms.Label lblChat;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.ListBox lstChat;
 
     }
 }

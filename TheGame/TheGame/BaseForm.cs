@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.IO;
 using System.Windows.Forms;
 using TheGame.Classes;
 
@@ -13,11 +14,16 @@ namespace TheGame
     public partial class BaseForm : Form
     {
         private string username;
+        private int counter = 0;
+        private List<string> lines = new List<string>();
+        private List<string> bots = new List<string> { "Ivailo", "Doncho", "Pesho", "Kukuruzcho", "Cvetko", "Urujcho", "Evstati", "007" };
         public BaseForm()
         {
             InitializeComponent();
             panelTelerik.Hide();
             lblTelerikInfo.Hide();
+            GetLines();
+            timer1.Start();
         }
 
         public BaseForm(string username):this()
@@ -75,7 +81,33 @@ namespace TheGame
                 gridQuests.SelectedCells[0].Style.BackColor = SystemColors.GrayText;
             }
         }
-        
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            Random random = new Random();
+            lstChat.Items.Add( this.bots[random.Next(0, this.bots.Count)]+":"+this.lines[random.Next(0, this.lines.Count)]);
+            
+            timer1.Interval = random.Next(2200, 5000);
+            this.counter++;
+            if (this.counter == 11)
+            {
+                lstChat.Items.Clear();
+                this.counter = 0;
+            }
+        }
+
+        private void GetLines()
+        {
+            StreamReader sr = new StreamReader("../../chat.txt");
+            using (sr)
+            {
+                while (!sr.EndOfStream)
+                {
+                    this.lines.Add(sr.ReadLine().ToString());
+                }
+            }
+            sr.Close();
+        }
 
     }
 }
