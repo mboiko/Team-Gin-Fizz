@@ -14,12 +14,12 @@ namespace TheGame.Classes.Characters
 
         public string Password { get; protected set; }
 
-        public Player(string name, string username, string password, int level, int experience, List<Skill> skills, PlayerType playerType,
+        public Player(string name, string username, int level, int experience, List<Skill> skills, PlayerType playerType,
             char gender, List<Item> equippedItems, int equippedItemsSize, List<Quest> curentQuest) 
             : base(name, level, experience, skills, playerType, gender, equippedItems, equippedItemsSize, curentQuest)
         {
             this.Username = username;
-            this.Password = password;
+
         }
 
         public void AddEquipment(Equipment equipment)

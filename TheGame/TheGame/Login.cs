@@ -23,9 +23,7 @@ namespace TheGame
 
         private void button1_Click_1(object sender, EventArgs e)
         {
-            //BaseForm form1 = new BaseForm();
-            //form1.Show();
-            if (Validation.IsCorrectLogin(this.txtUserName.Text.ToString(), this.txtPassword.Text.ToString()).Length > 1)
+             if (Validation.IsCorrectLogin(this.txtUserName.Text.ToString(), this.txtPassword.Text.ToString()).Length > 1)
             {
                 this.lblErrorMessage.Text = Validation.IsCorrectLogin(this.txtUserName.Text.ToString(), this.txtPassword.Text.ToString());
                 return;
@@ -44,7 +42,7 @@ namespace TheGame
                }
                else
                {
-                   Registration form = new Registration();
+                   Registration form = new Registration(this.txtUserName.Text.ToString().Trim());
                    form.Show();
                }
 
