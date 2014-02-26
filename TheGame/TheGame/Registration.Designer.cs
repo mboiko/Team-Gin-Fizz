@@ -388,6 +388,7 @@
             this.Controls.Add(this.lblGreets);
             this.Controls.Add(this.panel1);
             this.Name = "Registration";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
             this.Load += new System.EventHandler(this.Registration_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
