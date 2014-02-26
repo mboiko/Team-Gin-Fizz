@@ -2,13 +2,13 @@ Pesho
 Pesho
 0
 0
-Time 24 0
-Energy 100 100
-Efficiancy 100 100
-Creativity 100 100
-Communication 100 100
-Programming 100 100
-Motivation 100 100
+Time		1440		1440
+Energy		100		100
+Efficiancy		100		100
+Creativity		100		100
+Communication		100		100
+Programming		100		100
+Motivation		100		100
 
 Gamer
 m
