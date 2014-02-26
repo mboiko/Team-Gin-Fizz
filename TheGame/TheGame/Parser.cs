@@ -105,7 +105,7 @@
             }
             else
             {
-                MessageBox.Show("File ConsumableItems.txt cannot be found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("File Equipment.txt cannot be found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             return equipments;
