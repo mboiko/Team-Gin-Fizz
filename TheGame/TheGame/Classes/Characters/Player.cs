@@ -1,13 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using TheGame.Classes.Actions;
-using TheGame.Classes.Items;
-using System.IO;
-
-namespace TheGame.Classes.Characters
+﻿namespace TheGame.Classes.Characters
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Windows.Forms;
+    using System.Linq;
+
+    using System.IO;
+    using TheGame.Classes.Actions;
+    using TheGame.Classes.Items;
+
     public class Player : Hero, IControlable
     {
         public string Username { get; protected set; }
@@ -22,48 +23,48 @@ namespace TheGame.Classes.Characters
             this.Password = password;
         }
 
-        public void AddEquipment(Equipment equipment)
+        //methods
+        public void AddEquipment(Item equipment)
         {
-            this.EquippedItems.Add(equipment);
+            if (EquippedItemsSize > 0)
+            {
+                this.EquippedItems.Add(equipment);
+                this.EquippedItemsSize--;
+            }
+            else
+            {
+                MessageBox.Show("Your inventory is full!", "You can't wear more items.",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
-        public void Save()
+        public void RemoveItem(Item item)
         {
-            StreamWriter str = new StreamWriter("../../SaveFiles/" + Username + ".txt", false);
-            try
+            if (this.EquippedItems.Contains(item))
             {
-                using (str)
-                {
-                    str.WriteLine(Username);
-                    str.WriteLine(Name);
-                    str.WriteLine(Level);
-                    str.WriteLine(Experience);
-                    foreach (var skill in Skills)
-                    {
-                        str.WriteLine(skill.ToString());
-                    }
-                    str.WriteLine();
-                    str.WriteLine(PlayerType);
-                    str.WriteLine(Gender.ToString());
-                    foreach (var equippedItem in EquippedItems)
-                    {
-                        str.WriteLine(equippedItem.ToString());
-                    }
-                    str.WriteLine();
-                    str.WriteLine(EquippedItemsSize);
-                   foreach (var quest in CurrentQuests)
-                   {
-                       str.WriteLine(quest.ToString());
-                   }
-
-                }
+                this.EquippedItems.Remove(item);
+                this.EquippedItemsSize++;
             }
-            catch (IOException)
+            else
             {
-
-                throw new IOException("Cannot write in save.txt");
+                MessageBox.Show("You tried to remove unexisted item!", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
+
+        public void GoToTheBed(int time)
+        {
+            Skills[PlayerTime].SkillCurrentValue -= time;
+            int energyToAdd = (time / 60) * (Skills[PlayerEnergy].BaseSkillValue / 8);
             
+            if (Skills[PlayerEnergy].SkillCurrentValue + energyToAdd > Skills[PlayerEnergy].BaseSkillValue)
+            {
+                Skills[PlayerEnergy].SkillCurrentValue = Skills[PlayerEnergy].BaseSkillValue;
+            }
+            else
+            {
+                Skills[PlayerEnergy].SkillCurrentValue += energyToAdd;
+            }
         }
     }
 }

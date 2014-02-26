@@ -2,6 +2,9 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Text;
+    using System.Windows.Forms;
+
     using TheGame.Classes.Characters;
 
     public class Equipment : Item, IWearable
@@ -14,12 +17,23 @@
         }
 
         //method
-        public void IncreaseBaseSkill(Hero hero)
+        public void Compare(Item initialItem)
         {
-            for (int skill = 0; skill < hero.Skills.Count; skill++)
+            var result = new StringBuilder();
+            result.AppendLine(string.Format("{0} : {1}", this.Name, initialItem.Name));
+            result.AppendLine();
+
+            for (int skill = 0; skill < this.BonusSkills.Count; skill++)
             {
-                hero.Skills[skill].BaseSkillValue += BonusSkills[skill].BaseSkillValue;
+                string skillName = this.BonusSkills[skill].Name; 
+                int firstItemValue = this.BonusSkills[skill].BaseSkillValue;
+                int secondItemValue = initialItem.BonusSkills[skill].BaseSkillValue;
+
+                result.AppendLine(string.Format("{0} {1} : {2}",
+                    skillName, firstItemValue, secondItemValue));
             }
+
+            MessageBox.Show(result.ToString(), "Equipment Comparison", MessageBoxButtons.OK);
         }
 
         public override string ToString()

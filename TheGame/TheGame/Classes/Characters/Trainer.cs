@@ -1,11 +1,14 @@
 ﻿namespace TheGame.Classes.Characters
 {
+    using System;
     using System.Collections.Generic;
+    using System.Windows.Forms;
+
     using TheGame.Classes.Actions;
 
     public class Trainer : Character
     {
-        public List<Quest> questToGive;
+        private List<Quest> questToGive;
 
         public Trainer(string name, List<Quest> quests)
             : base(name)
@@ -38,11 +41,12 @@
                     }
                 }
 
-                return new Quest("Game Over", "Turn off the game and try your skills at the real Telerik Academy!",
-                new List<SubMission>(), null, false);            
+                MessageBox.Show("Game Over", "Turn off the game and try your skills at the real Telerik Academy!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return null;            
             }
             else
             {
+                MessageBox.Show("You have  a lot of work to do.", "When you're ready I'll give you new homework.", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return null;
             }
         }

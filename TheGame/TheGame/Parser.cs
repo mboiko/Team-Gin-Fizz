@@ -1,14 +1,16 @@
 ﻿namespace TheGame
 {
     using System;
-    using TheGame.Classes;
-    using TheGame.Classes.Items;
     using System.Collections.Generic;
     using System.Collections;
-    using TheGame.Classes.Actions;
     using System.Linq;
     using System.IO;
     using System.Windows.Forms;
+    
+    using TheGame.Classes;
+    using TheGame.Classes.Items;
+    using TheGame.Classes.Characters;
+    using TheGame.Classes.Actions;
 
     public static class Parser
     {
@@ -156,6 +158,43 @@
             }
 
             return quests;
+        }
+
+        public static void SavePlayer(Player player)
+        {
+            StreamWriter str = new StreamWriter("../../SaveFiles/" + player.Username + ".txt", false);
+            try
+            {
+                using (str)
+                {
+                    str.WriteLine(player.Username);
+                    str.WriteLine(player.Name);
+                    str.WriteLine(player.Level);
+                    str.WriteLine(player.Experience);
+                    foreach (var skill in player.Skills)
+                    {
+                        str.WriteLine(skill.ToString());
+                    }
+                    str.WriteLine();
+                    str.WriteLine(player.PlayerType);
+                    str.WriteLine(player.Gender.ToString());
+                    foreach (var equippedItem in player.EquippedItems)
+                    {
+                        str.WriteLine(equippedItem.ToString());
+                    }
+                    str.WriteLine();
+                    str.WriteLine(player.EquippedItemsSize);
+                    foreach (var quest in player.CurrentQuests)
+                    {
+                        str.WriteLine(quest.ToString());
+                    }
+
+                }
+            }
+            catch (IOException info)
+            {
+                MessageBox.Show(info.ToString(), "Error", MessageBoxButtons.RetryCancel, MessageBoxIcon.Error);
+            }
         }
     }
 }
