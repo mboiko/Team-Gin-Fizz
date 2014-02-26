@@ -20,7 +20,7 @@
         public void Compare(Item initialItem)
         {
             var result = new StringBuilder();
-            result.AppendLine(string.Format("{0} : {1}", this.Name.PadLeft(32), initialItem.Name.PadRight(32)));
+            result.AppendLine(string.Format("{0} : {1}", this.Name, initialItem.Name));
             result.AppendLine();
 
             for (int skill = 0; skill < this.BonusSkills.Count; skill++)
@@ -30,8 +30,7 @@
                 int secondItemValue = initialItem.BonusSkills[skill].BaseSkillValue;
 
                 result.AppendLine(string.Format("{0} {1} : {2}",
-                    skillName.PadLeft(31 - firstItemValue.ToString().Length - skillName.Length),
-                    firstItemValue, secondItemValue.ToString().PadRight(32)));
+                    skillName, firstItemValue, secondItemValue));
             }
 
             MessageBox.Show(result.ToString(), "Equipment Comparison", MessageBoxButtons.OK);
