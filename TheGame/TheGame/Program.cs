@@ -17,10 +17,6 @@
         [STAThread]
         static void Main()
         {
-            List<Equipment> equipments = Parser.GetAllEquipments();
-
-            equipments[0].Compare(equipments[1]);
-
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());

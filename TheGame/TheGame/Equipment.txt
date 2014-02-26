@@ -1,9 +1,9 @@
 PC Mouse|Time|0|Energy|0|Efficiancy|4|Creativity|0|Communication|0|Programming|0|false
-PC Mouse (3 button + Scroll)|Time|0|Energy|0|Efficiancy|4|Creativity|0|Communication|0|Programming|0|false
-PC Mouse (5 button + Scroll)|Time|0|Energy|0|Efficiancy|8|Creativity|0|Communication|0|Programming|0|false
+PC Mouse (3 button + Scroll)|Time|0|Energy|0|Efficiancy|8|Creativity|0|Communication|0|Programming|0|false
+PC Mouse (5 button + Scroll)|Time|0|Energy|0|Efficiancy|12|Creativity|0|Communication|0|Programming|0|false
 PC Keyboard|Time|0|Energy|0|Efficiancy|4|Creativity|0|Communication|0|Programming|0|false
-PC Keyboard|Time|0|Energy|0|Efficiancy|8|Creativity|0|Communication|0|Programming|0|false
-PC Keyboard|Time|0|Energy|0|Efficiancy|12|Creativity|0|Communication|0|Programming|0|false
+PC Keyboard with Num Pad|Time|0|Energy|0|Efficiancy|8|Creativity|0|Communication|0|Programming|0|false
+PC Keyboard with Ergonomic Form|Time|0|Energy|0|Efficiancy|12|Creativity|0|Communication|0|Programming|0|false
 PC Monitor|Time|0|Energy|0|Efficiancy|10|Creativity|0|Communication|0|Programming|0|false
 Glasses|Time|0|Energy|0|Efficiancy|5|Creativity|0|Communication|0|Programming|0|false
 Powerful Computer|Time|0|Energy|0|Efficiancy|15|Creativity|0|Communication|5|Programming|0|false
