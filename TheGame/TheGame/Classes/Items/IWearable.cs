@@ -1,9 +1,9 @@
 ﻿namespace TheGame
 {
-    using TheGame.Classes.Characters;
+    using TheGame.Classes.Items;
 
     interface IWearable
     {
-        void IncreaseBaseSkill(Hero hero);
+        void Compare(Item initialItem);
     }
 }

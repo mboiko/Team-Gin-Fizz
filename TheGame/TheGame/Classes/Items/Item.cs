@@ -11,17 +11,6 @@
         private List<Skill> bonusSkills;
         private bool isEquiped;
 
-        #region Constructors
-
-        public Item(string name, List<Skill> bonusSkills, bool isEquiped)
-            : base(name)
-        {
-            this.BonusSkills = bonusSkills;
-            this.IsEquiped = isEquiped;
-        }
-
-        #endregion
-
         public bool IsEquiped 
         {
             get
@@ -52,14 +41,19 @@
         }
 
         #endregion
-        
-        
-        #region Methods
 
-        public void AddSkill(Skill newSkill)
+        #region Constructors
+
+        public Item(string name, List<Skill> bonusSkills, bool isEquiped)
+            : base(name)
         {
-            this.bonusSkills.Add(newSkill);
+            this.BonusSkills = bonusSkills;
+            this.IsEquiped = isEquiped;
         }
+
+        #endregion
+              
+        #region Methods
 
         public override string ToString()
         {
@@ -97,15 +91,11 @@
         //{
         //    return this.Name.GetHashCode() ^ this.Description.GetHashCode();
         //}
+        #endregion
 
         public void UseItem(Hero hero)
         {
-            for (int skill = 0; skill < hero.Skills.Count; skill++)
-            {
-                hero.Skills[skill].SkillCurrentValue += BonusSkills[skill].SkillCurrentValue;
-            }
+            throw new NotImplementedException();
         }
-
-        #endregion
     }
 }

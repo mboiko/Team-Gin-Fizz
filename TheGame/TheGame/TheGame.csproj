@@ -52,7 +52,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.VisualBasic" />
-    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -65,6 +64,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Building.cs" />
     <Compile Include="Classes\Actions\MoveAction.cs" />
     <Compile Include="Classes\Characters\Bot.cs" />
     <Compile Include="Classes\Characters\Character.cs" />
@@ -72,6 +72,7 @@
     <Compile Include="Classes\Characters\EvilBot.cs" />
     <Compile Include="Classes\Characters\Hero.cs" />
     <Compile Include="Classes\Characters\Player.cs" />
+    <Compile Include="Classes\Characters\Salesman.cs" />
     <Compile Include="Classes\Characters\Trainer.cs" />
     <Compile Include="Classes\Exceptions\NotEnoughEnergyException.cs" />
     <Compile Include="Classes\Exceptions\NotEnoughTimeException.cs" />

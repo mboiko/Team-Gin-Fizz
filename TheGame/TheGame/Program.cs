@@ -17,15 +17,6 @@
         [STAThread]
         static void Main()
         {
-            List<Skill> someSkills = TheGame.Parser.GetAllSkills();
-
-            List<Item> someitem = TheGame.Parser.GetAllConsumableItems();
-
-            List<Equipment> equipments = TheGame.Parser.GetAllEquipments();
-
-            List<Quest> quests = TheGame.Parser.GetAllQuests();
-            Player pesho = new Player("Pesho", "Pesho", 0, 0, someSkills, PlayerType.Gamer, 'm', new List<Item>(), 2, new List<Quest>());
-            pesho.Save();
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Login());

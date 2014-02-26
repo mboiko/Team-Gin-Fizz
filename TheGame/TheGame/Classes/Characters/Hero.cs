@@ -7,6 +7,9 @@
 
     public class Hero : Character
     {
+        protected const int PlayerTime = 0;
+        protected const int PlayerEnergy = 1;
+
         public int Level { get; private set; }
         public int Experience { get; private set; }
         public List<Skill> Skills { get; private set; }
@@ -14,7 +17,7 @@
         public PlayerType PlayerType { get; private set; }
         public char Gender { get; private set; }
         public List<Item> EquippedItems { get; private set; }
-        public int EquippedItemsSize { get; private set; }
+        public int EquippedItemsSize { get; protected set; }
 
         //public Location location { get; private set; }
 
