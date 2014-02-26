@@ -16,40 +16,34 @@
         {
             List<Skill> skills = new List<Skill>();
 
-            //try
-            //{
-                if (File.Exists("../../"+file+".txt"))
+            if (File.Exists("../../" + file + ".txt"))
+            {
+                StreamReader sr = new StreamReader("../../" + file + ".txt");
+                using (sr)
                 {
-                    StreamReader sr = new StreamReader("../../"+file+".txt");
-                    using (sr)
+                    while (!sr.EndOfStream)
                     {
-                        while (!sr.EndOfStream)
+                        string[] line = sr.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+                        if (line.Length > 0)
                         {
-                            string[] line = sr.ReadLine().Split(new char[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
-                            if (line.Length > 0)
-                            {
-                                skills.Add(new Skill(line[0], int.Parse(line[1]), int.Parse(line[2])));
-                            }
+                            skills.Add(new Skill(line[0], int.Parse(line[1]), int.Parse(line[2])));
                         }
                     }
                 }
-                else
-                { MessageBox.Show("File " + file + ".txt cannot be found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error); }
-
-            //}
-            //catch (FileNotFoundException)
-            //{
-                // throw new FileNotFoundException("File Skills.txt is not found.");              
-            //}
+            }
+            else
+            {
+                MessageBox.Show("File " + file + ".txt cannot be found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
 
             return skills;
         }
 
         public static List<Item> GetAllConsumableItems()
         {
-            List<Item> ConsumableItems = new List<Item>();          
+            List<Item> ConsumableItems = new List<Item>();
 
-            try
+            if (File.Exists("../../ConsumableItems.txt"))
             {
                 StreamReader sr = new StreamReader("../../ConsumableItems.txt");
                 using (sr)
@@ -74,9 +68,9 @@
 
                 }
             }
-            catch (FileNotFoundException)
+            else
             {
-                throw new FileNotFoundException("File ConsumableItems.txt is not found.");
+                MessageBox.Show("File ConsumableItems.txt cannot be found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             return ConsumableItems;
@@ -86,7 +80,7 @@
         {
             List<Equipment> equipments = new List<Equipment>();
 
-            try
+            if (File.Exists("../../Equipment.txt"))
             {
                 StreamReader sr = new StreamReader("../../Equipment.txt");
                 using (sr)
@@ -109,9 +103,9 @@
                     }
                 }
             }
-            catch (FileNotFoundException)
+            else
             {
-                throw new FileNotFoundException("File Equipment.txt is not found.");
+                MessageBox.Show("File ConsumableItems.txt cannot be found.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
             return equipments;
@@ -121,7 +115,8 @@
         {
             List<Equipment> Equipments = GetAllEquipments();
             List<Quest> quests = new List<Quest>();
-            try
+
+            if (File.Exists("../../Quests.txt"))
             {
                 StreamReader sr = new StreamReader("../../Quests.txt");
                 using (sr)
@@ -147,18 +142,19 @@
                         }
                         Equipment gift = Equipments[RandomGenerator.GetRandomNumber(start, end)];
                         if (line.Count > 0)
-	                    {
+                        {
                             quests.Add(new Quest(line[0], line[1],
                                 new List<SubMission>() { new SubMission(line[2], line[3], int.Parse(line[4]), int.Parse(line[5]), bool.Parse(line[6])) },
                                 gift, bool.Parse(line[7])));
-	                    }                   
-                    }                   
+                        }
+                    }
                 }
             }
-            catch (FileNotFoundException e)
+            else
             {
-                Console.WriteLine(e.Message);
+                MessageBox.Show("The file Quests.txt cannot be found","Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
             return quests;
         }
     }
