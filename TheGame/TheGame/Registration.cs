@@ -138,8 +138,7 @@ namespace TheGame
         {
             if (this.txtHeroName.Text.Length > 2)
             {
-                
-                
+              
                 int numRows = grdSkills.Rows.Count;
                 for (int i = 0; i < numRows; i++)
                 {
@@ -149,7 +148,7 @@ namespace TheGame
                 List<Classes.Actions.Quest> quests = new List<Classes.Actions.Quest>();
                 Player player = new Player(this.txtHeroName.Text,this.userName,0,0,skills,playerType,this.gender,new List<Item>(), 2, new List<Quest>() );
                 Parser.SavePlayer(player);
-                BaseForm form = new BaseForm();
+                BaseForm form = new BaseForm(player);
                 form.Show();
                 this.Hide();
             }
