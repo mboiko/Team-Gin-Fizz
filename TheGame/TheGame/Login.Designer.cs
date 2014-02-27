@@ -45,9 +45,9 @@
             // 
             // txtUserName
             // 
-            this.txtUserName.Location = new System.Drawing.Point(86, 288);
+            this.txtUserName.Location = new System.Drawing.Point(89, 288);
             this.txtUserName.Name = "txtUserName";
-            this.txtUserName.Size = new System.Drawing.Size(117, 20);
+            this.txtUserName.Size = new System.Drawing.Size(114, 20);
             this.txtUserName.TabIndex = 0;
             // 
             // txtPassword
@@ -119,6 +119,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUserName);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
