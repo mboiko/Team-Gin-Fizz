@@ -1,42 +1,220 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="TheGame.BaseForm" Collapsed="true">
-    <Position X="11.75" Y="2.25" Width="1.5" />
+    <Position X="8.5" Y="10.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AACAAAAAACAAABAAAACAAAACAAAAAAAAAAAAAABABBA=</HashCode>
+      <HashCode>QAQAAYoQUCACAhEAAICBAEECAQqIZwkAAgAAAAAApAA=</HashCode>
       <FileName>BaseForm.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TheGame.Files" Collapsed="true">
-    <Position X="9" Y="0.5" Width="1.5" />
+  <Class Name="TheGame.Building" Collapsed="true">
+    <Position X="2.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQCAAAEAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Building.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheGame.Files">
+    <Position X="10.75" Y="10" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Files.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="TheGame.Validation">
+    <Position X="14.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Validation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Class Name="TheGame.Login" Collapsed="true">
-    <Position X="11.75" Y="0.5" Width="1.5" />
+    <Position X="8.5" Y="9.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAgAAAAQACAAABAAAACAAAACAIAAAAgEAAAAAABgAEA=</HashCode>
       <FileName>Login.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TheGame.Program" Collapsed="true">
-    <Position X="9.75" Y="2" Width="1.5" />
+  <Class Name="TheGame.Parser">
+    <Position X="14.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAAQAAAgAAAAAACAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Parser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheGame.Program">
+    <Position X="12.5" Y="8.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
       <FileName>Program.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TheGame.Classes.Items.GameObject" Collapsed="true">
-    <Position X="2" Y="0.5" Width="1.5" />
+  <Class Name="TheGame.Registration" Collapsed="true">
+    <Position X="8.5" Y="8.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAgAAAEIAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Classes\Items\GameObject.cs</FileName>
+      <HashCode>AIAEIjAAQHACAQEAOACA5EQCAQA5BAAADAAAAdFACAA=</HashCode>
+      <FileName>Registration.cs</FileName>
     </TypeIdentifier>
   </Class>
+  <Class Name="TheGame.Classes.Actions.Action">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAQAAAAAQBAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Actions\Action.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheGame.Classes.Actions.MoveAction" Collapsed="true">
+    <Position X="11.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Classes\Actions\MoveAction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheGame.Classes.Actions.SubMission" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Actions\SubMission.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheGame.Classes.Actions.Тrouble" Collapsed="true">
+    <Position X="11.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Actions\Тrouble.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheGame.Classes.Actions.Quest">
+    <Position X="4.5" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAABAwFAAEAAQAAAAEAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Classes\Items\Quest.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheGame.Classes.Characters.Bot">
+    <Position X="8.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAABAAAAAAAAAAAAAIEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Characters\Bot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheGame.Classes.Characters.Character">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Characters\Character.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheGame.Classes.Characters.EvilBot">
+    <Position X="8.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Characters\EvilBot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheGame.Classes.Characters.Hero">
+    <Position X="6.5" Y="4" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EBIAAAQAQAAAAACAAgAAAEAAARAgAAABAAAAAAAAQAA=</HashCode>
+      <FileName>Classes\Characters\Hero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheGame.Classes.Characters.Player">
+    <Position X="6.5" Y="8.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAQAAAAAAAAAAIAAGAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Characters\Player.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TheGame.Classes.Characters.Salesman">
+    <Position X="10.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Characters\Salesman.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheGame.Classes.Characters.Trainer">
+    <Position X="12" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAABAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Classes\Characters\Trainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheGame.Classes.DayTime">
+    <Position X="12.5" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABEAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\DayTime.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheGame.Classes.GameObject">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheGame.Classes.GameStats">
+    <Position X="14" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>kAAAARAAAAAAAAAAAQAABCkABAEsAACFQAAAhEAAEAE=</HashCode>
+      <FileName>Classes\GameStats.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheGame.Classes.PositionableObject">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\PositionableObject.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="TheGame.Classes.RandomGenerator">
+    <Position X="10.75" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\RandomGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheGame.Classes.Skill">
+    <Position X="0.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAEgAAAAAwAIAAMAIAAAAAAAAAAAiA=</HashCode>
+      <FileName>Classes\Skill.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheGame.Classes.StaticObject">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\StaticObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheGame.Classes.Exceptions.NotEnoughEnergyException" Collapsed="true">
+    <Position X="4.5" Y="9.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Exceptions\NotEnoughEnergyException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheGame.Classes.Exceptions.NotEnoughTimeException" Collapsed="true">
+    <Position X="4.5" Y="8.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Exceptions\NotEnoughTimeException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TheGame.Classes.Items.Equipment">
+    <Position X="2.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Classes\Items\Equipment.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
   <Class Name="TheGame.Classes.Items.Item" Collapsed="true">
-    <Position X="0.5" Y="1.75" Width="1.5" />
+    <Position X="0.75" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAQAIAAAACAUgAAAEAAAAAAAAAAAAAAAAAAAAiA=</HashCode>
       <FileName>Classes\Items\Item.cs</FileName>
@@ -44,37 +222,65 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="TheGame.Classes.Items.SellableItem" Collapsed="true">
-    <Position X="0.5" Y="3.25" Width="1.5" />
+    <Position X="0.75" Y="5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAABAAAAAQAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Classes\Items\SellableItem.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="TheGame.Classes.Skill" Collapsed="true">
-    <Position X="4.25" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAgAAAAAAAAAAAAEgAAAAAwAIAAMAIAAAAAAAAAAAiA=</HashCode>
-      <FileName>Classes\Skill.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="TheGame.Properties.Resources" Collapsed="true">
-    <Position X="9.75" Y="1.25" Width="1.5" />
+    <Position X="2.75" Y="6.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
     </TypeIdentifier>
   </Class>
   <Class Name="TheGame.Properties.Settings" Collapsed="true">
-    <Position X="11.75" Y="1.25" Width="1.5" />
+    <Position X="8.5" Y="11" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
     </TypeIdentifier>
   </Class>
-  <Class Name="TheGame.Classes.GameStats" Collapsed="true">
-    <Position X="6.25" Y="0.5" Width="1.5" />
+  <Struct Name="TheGame.Classes.Point2D" Collapsed="true">
+    <Position X="2.75" Y="8.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>kAAAARAAAAAAAAAAAQAABCkABAEsAACFQAAAhEAAEAE=</HashCode>
-      <FileName>Classes\GameStats.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYAA=</HashCode>
+      <FileName>Classes\Point2D.cs</FileName>
     </TypeIdentifier>
-  </Class>
+  </Struct>
+  <Interface Name="TheGame.IWearable" Collapsed="true">
+    <Position X="2.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>Classes\Items\IWearable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TheGame.Classes.IControlable" Collapsed="true">
+    <Position X="6.5" Y="11.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\IControlable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TheGame.Classes.IPositionable" Collapsed="true">
+    <Position X="3" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\IPositionable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="TheGame.Classes.Items.IUseble" Collapsed="true">
+    <Position X="0.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Items\IUseble.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="TheGame.PlayerType" Collapsed="true">
+    <Position X="2.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Classes\PlayerType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
