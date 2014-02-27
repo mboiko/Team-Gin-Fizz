@@ -77,7 +77,6 @@
             this.lblGreets.Size = new System.Drawing.Size(204, 26);
             this.lblGreets.TabIndex = 0;
             this.lblGreets.Text = "Choose your Hero";
-            
             // 
             // pictureBox1
             // 
@@ -274,7 +273,6 @@
             this.lblInfo.Size = new System.Drawing.Size(109, 22);
             this.lblInfo.TabIndex = 17;
             this.lblInfo.Text = "Information";
-            
             // 
             // panel1
             // 
@@ -357,7 +355,6 @@
             this.grdSkills.ReadOnly = true;
             this.grdSkills.Size = new System.Drawing.Size(326, 231);
             this.grdSkills.TabIndex = 19;
-       
             // 
             // Column1
             // 
@@ -410,6 +407,7 @@
             this.Name = "Registration";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Register";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Registration_FormClosed);
             this.Load += new System.EventHandler(this.Registration_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
