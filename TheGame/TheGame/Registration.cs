@@ -178,5 +178,10 @@ namespace TheGame
         {
 
         }
+
+        private void lblGreets_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

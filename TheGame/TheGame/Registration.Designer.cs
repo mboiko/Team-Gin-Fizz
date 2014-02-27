@@ -70,12 +70,14 @@
             // lblGreets
             // 
             this.lblGreets.AutoSize = true;
+            this.lblGreets.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblGreets.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblGreets.Location = new System.Drawing.Point(169, 9);
+            this.lblGreets.Location = new System.Drawing.Point(26, 21);
             this.lblGreets.Name = "lblGreets";
             this.lblGreets.Size = new System.Drawing.Size(204, 26);
             this.lblGreets.TabIndex = 0;
             this.lblGreets.Text = "Choose your Hero";
+            this.lblGreets.Click += new System.EventHandler(this.lblGreets_Click);
             // 
             // pictureBox1
             // 
@@ -83,7 +85,7 @@
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(44, 51);
+            this.pictureBox1.Location = new System.Drawing.Point(74, 227);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(118, 165);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -97,7 +99,7 @@
             this.pictureBox2.ErrorImage = null;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
-            this.pictureBox2.Location = new System.Drawing.Point(195, 51);
+            this.pictureBox2.Location = new System.Drawing.Point(258, 227);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(118, 165);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -111,7 +113,7 @@
             this.pictureBox3.ErrorImage = null;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
-            this.pictureBox3.Location = new System.Drawing.Point(349, 51);
+            this.pictureBox3.Location = new System.Drawing.Point(432, 227);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(118, 165);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -125,7 +127,7 @@
             this.pictureBox4.ErrorImage = null;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.InitialImage")));
-            this.pictureBox4.Location = new System.Drawing.Point(349, 303);
+            this.pictureBox4.Location = new System.Drawing.Point(432, 484);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(118, 165);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -139,7 +141,7 @@
             this.pictureBox5.ErrorImage = null;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.InitialImage")));
-            this.pictureBox5.Location = new System.Drawing.Point(195, 303);
+            this.pictureBox5.Location = new System.Drawing.Point(253, 484);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(118, 165);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -153,7 +155,7 @@
             this.pictureBox6.ErrorImage = null;
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.InitialImage")));
-            this.pictureBox6.Location = new System.Drawing.Point(44, 303);
+            this.pictureBox6.Location = new System.Drawing.Point(74, 484);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(118, 165);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -164,8 +166,10 @@
             // lblGamerBoy
             // 
             this.lblGamerBoy.AutoSize = true;
+            this.lblGamerBoy.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblGamerBoy.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblGamerBoy.Location = new System.Drawing.Point(44, 223);
+            this.lblGamerBoy.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblGamerBoy.Location = new System.Drawing.Point(76, 194);
             this.lblGamerBoy.Name = "lblGamerBoy";
             this.lblGamerBoy.Size = new System.Drawing.Size(100, 22);
             this.lblGamerBoy.TabIndex = 7;
@@ -174,8 +178,9 @@
             // lblNerdBoy
             // 
             this.lblNerdBoy.AutoSize = true;
+            this.lblNerdBoy.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblNerdBoy.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblNerdBoy.Location = new System.Drawing.Point(204, 223);
+            this.lblNerdBoy.Location = new System.Drawing.Point(260, 190);
             this.lblNerdBoy.Name = "lblNerdBoy";
             this.lblNerdBoy.Size = new System.Drawing.Size(85, 22);
             this.lblNerdBoy.TabIndex = 8;
@@ -184,8 +189,10 @@
             // lblPartyBoy
             // 
             this.lblPartyBoy.AutoSize = true;
+            this.lblPartyBoy.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblPartyBoy.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblPartyBoy.Location = new System.Drawing.Point(357, 223);
+            this.lblPartyBoy.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblPartyBoy.Location = new System.Drawing.Point(437, 190);
             this.lblPartyBoy.Name = "lblPartyBoy";
             this.lblPartyBoy.Size = new System.Drawing.Size(88, 22);
             this.lblPartyBoy.TabIndex = 9;
@@ -194,8 +201,9 @@
             // lblGamerGirl
             // 
             this.lblGamerGirl.AutoSize = true;
+            this.lblGamerGirl.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblGamerGirl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblGamerGirl.Location = new System.Drawing.Point(44, 484);
+            this.lblGamerGirl.Location = new System.Drawing.Point(75, 456);
             this.lblGamerGirl.Name = "lblGamerGirl";
             this.lblGamerGirl.Size = new System.Drawing.Size(97, 22);
             this.lblGamerGirl.TabIndex = 10;
@@ -204,8 +212,9 @@
             // lblNerdGirl
             // 
             this.lblNerdGirl.AutoSize = true;
+            this.lblNerdGirl.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblNerdGirl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblNerdGirl.Location = new System.Drawing.Point(204, 484);
+            this.lblNerdGirl.Location = new System.Drawing.Point(254, 456);
             this.lblNerdGirl.Name = "lblNerdGirl";
             this.lblNerdGirl.Size = new System.Drawing.Size(82, 22);
             this.lblNerdGirl.TabIndex = 11;
@@ -214,8 +223,9 @@
             // lblPartyGirl
             // 
             this.lblPartyGirl.AutoSize = true;
+            this.lblPartyGirl.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblPartyGirl.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblPartyGirl.Location = new System.Drawing.Point(357, 484);
+            this.lblPartyGirl.Location = new System.Drawing.Point(428, 456);
             this.lblPartyGirl.Name = "lblPartyGirl";
             this.lblPartyGirl.Size = new System.Drawing.Size(85, 22);
             this.lblPartyGirl.TabIndex = 12;
@@ -224,8 +234,9 @@
             // lblSkills
             // 
             this.lblSkills.AutoSize = true;
+            this.lblSkills.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblSkills.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblSkills.Location = new System.Drawing.Point(647, 10);
+            this.lblSkills.Location = new System.Drawing.Point(615, 190);
             this.lblSkills.Name = "lblSkills";
             this.lblSkills.Size = new System.Drawing.Size(64, 25);
             this.lblSkills.TabIndex = 13;
@@ -233,7 +244,7 @@
             // 
             // btnChoice
             // 
-            this.btnChoice.Location = new System.Drawing.Point(581, 478);
+            this.btnChoice.Location = new System.Drawing.Point(620, 645);
             this.btnChoice.Name = "btnChoice";
             this.btnChoice.Size = new System.Drawing.Size(177, 35);
             this.btnChoice.TabIndex = 15;
@@ -245,18 +256,20 @@
             // 
             this.txtInfo.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txtInfo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtInfo.Location = new System.Drawing.Point(530, 303);
+            this.txtInfo.ForeColor = System.Drawing.Color.YellowGreen;
+            this.txtInfo.Location = new System.Drawing.Point(620, 499);
             this.txtInfo.Multiline = true;
             this.txtInfo.Name = "txtInfo";
             this.txtInfo.ReadOnly = true;
-            this.txtInfo.Size = new System.Drawing.Size(315, 165);
+            this.txtInfo.Size = new System.Drawing.Size(315, 121);
             this.txtInfo.TabIndex = 16;
             // 
             // lblInfo
             // 
             this.lblInfo.AutoSize = true;
+            this.lblInfo.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.lblInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 13F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblInfo.Location = new System.Drawing.Point(615, 278);
+            this.lblInfo.Location = new System.Drawing.Point(625, 474);
             this.lblInfo.Name = "lblInfo";
             this.lblInfo.Size = new System.Drawing.Size(109, 22);
             this.lblInfo.TabIndex = 17;
@@ -265,20 +278,23 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.SystemColors.InfoText;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnGo);
             this.panel1.Controls.Add(this.txtHeroName);
             this.panel1.Controls.Add(this.lblChooseName);
             this.panel1.Controls.Add(this.pictureBox7);
-            this.panel1.Location = new System.Drawing.Point(150, 143);
+            this.panel1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panel1.Location = new System.Drawing.Point(45, 190);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(459, 253);
+            this.panel1.Size = new System.Drawing.Size(536, 490);
             this.panel1.TabIndex = 18;
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(307, 176);
+            this.btnCancel.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnCancel.Location = new System.Drawing.Point(318, 264);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 4;
@@ -288,7 +304,8 @@
             // 
             // btnGo
             // 
-            this.btnGo.Location = new System.Drawing.Point(202, 176);
+            this.btnGo.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnGo.Location = new System.Drawing.Point(202, 264);
             this.btnGo.Name = "btnGo";
             this.btnGo.Size = new System.Drawing.Size(75, 23);
             this.btnGo.TabIndex = 3;
@@ -298,7 +315,7 @@
             // 
             // txtHeroName
             // 
-            this.txtHeroName.Location = new System.Drawing.Point(202, 71);
+            this.txtHeroName.Location = new System.Drawing.Point(202, 207);
             this.txtHeroName.Name = "txtHeroName";
             this.txtHeroName.Size = new System.Drawing.Size(191, 20);
             this.txtHeroName.TabIndex = 2;
@@ -307,7 +324,7 @@
             // 
             this.lblChooseName.AutoSize = true;
             this.lblChooseName.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblChooseName.Location = new System.Drawing.Point(198, 34);
+            this.lblChooseName.Location = new System.Drawing.Point(198, 140);
             this.lblChooseName.Name = "lblChooseName";
             this.lblChooseName.Size = new System.Drawing.Size(208, 20);
             this.lblChooseName.TabIndex = 1;
@@ -316,7 +333,7 @@
             // pictureBox7
             // 
             this.pictureBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox7.Location = new System.Drawing.Point(23, 34);
+            this.pictureBox7.Location = new System.Drawing.Point(28, 140);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(118, 165);
             this.pictureBox7.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -333,10 +350,10 @@
             this.Column1,
             this.Column2,
             this.Column3});
-            this.grdSkills.Location = new System.Drawing.Point(530, 51);
+            this.grdSkills.Location = new System.Drawing.Point(616, 227);
             this.grdSkills.Name = "grdSkills";
             this.grdSkills.ReadOnly = true;
-            this.grdSkills.Size = new System.Drawing.Size(326, 213);
+            this.grdSkills.Size = new System.Drawing.Size(326, 231);
             this.grdSkills.TabIndex = 19;
             this.grdSkills.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdSkills_CellContentClick);
             // 
@@ -367,21 +384,22 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(960, 530);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.Controls.Add(this.lblNerdBoy);
             this.Controls.Add(this.grdSkills);
             this.Controls.Add(this.lblInfo);
             this.Controls.Add(this.txtInfo);
             this.Controls.Add(this.btnChoice);
             this.Controls.Add(this.lblSkills);
-            this.Controls.Add(this.lblPartyGirl);
-            this.Controls.Add(this.lblNerdGirl);
+            this.Controls.Add(this.lblGamerBoy);
             this.Controls.Add(this.lblGamerGirl);
             this.Controls.Add(this.lblPartyBoy);
-            this.Controls.Add(this.lblNerdBoy);
-            this.Controls.Add(this.lblGamerBoy);
-            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.lblNerdGirl);
             this.Controls.Add(this.pictureBox5);
             this.Controls.Add(this.pictureBox6);
+            this.Controls.Add(this.lblPartyGirl);
+            this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
