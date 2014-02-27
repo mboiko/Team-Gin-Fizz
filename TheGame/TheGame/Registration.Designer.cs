@@ -77,7 +77,7 @@
             this.lblGreets.Size = new System.Drawing.Size(204, 26);
             this.lblGreets.TabIndex = 0;
             this.lblGreets.Text = "Choose your Hero";
-            this.lblGreets.Click += new System.EventHandler(this.lblGreets_Click);
+            
             // 
             // pictureBox1
             // 
@@ -112,7 +112,7 @@
             this.pictureBox3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox3.ErrorImage = null;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.InitialImage")));
+            this.pictureBox3.InitialImage = null;
             this.pictureBox3.Location = new System.Drawing.Point(432, 227);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(118, 165);
@@ -274,12 +274,12 @@
             this.lblInfo.Size = new System.Drawing.Size(109, 22);
             this.lblInfo.TabIndex = 17;
             this.lblInfo.Text = "Information";
-            this.lblInfo.Click += new System.EventHandler(this.lblInfo_Click);
+            
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.InfoText;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.BackColor = System.Drawing.SystemColors.ControlText;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel1.Controls.Add(this.btnCancel);
             this.panel1.Controls.Add(this.btnGo);
             this.panel1.Controls.Add(this.txtHeroName);
@@ -293,24 +293,26 @@
             // 
             // btnCancel
             // 
+            this.btnCancel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnCancel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnCancel.Location = new System.Drawing.Point(318, 264);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 23);
             this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = true;
+            this.btnCancel.UseVisualStyleBackColor = false;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
             // btnGo
             // 
+            this.btnGo.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.btnGo.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnGo.Location = new System.Drawing.Point(202, 264);
             this.btnGo.Name = "btnGo";
             this.btnGo.Size = new System.Drawing.Size(75, 23);
             this.btnGo.TabIndex = 3;
             this.btnGo.Text = "GO";
-            this.btnGo.UseVisualStyleBackColor = true;
+            this.btnGo.UseVisualStyleBackColor = false;
             this.btnGo.Click += new System.EventHandler(this.btnGo_Click);
             // 
             // txtHeroName
@@ -355,7 +357,7 @@
             this.grdSkills.ReadOnly = true;
             this.grdSkills.Size = new System.Drawing.Size(326, 231);
             this.grdSkills.TabIndex = 19;
-            this.grdSkills.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.grdSkills_CellContentClick);
+       
             // 
             // Column1
             // 
@@ -385,7 +387,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-            this.ClientSize = new System.Drawing.Size(1008, 729);
+            this.ClientSize = new System.Drawing.Size(1008, 693);
             this.Controls.Add(this.lblNerdBoy);
             this.Controls.Add(this.grdSkills);
             this.Controls.Add(this.lblInfo);

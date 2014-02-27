@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using TheGame.Classes;
 using TheGame.Classes.Characters;
 using TheGame.Classes.Exceptions;
+using TheGame.Classes.Items;
 
 namespace TheGame
 {
@@ -26,6 +27,7 @@ namespace TheGame
             panelTelerik.Hide();
             lblTelerikInfo.Hide();
             GetLines();
+            btnRestore.Hide();
             timer1.Start();
 
         }
@@ -41,6 +43,7 @@ namespace TheGame
 
         private void BaseForm_Load(object sender, EventArgs e)
         {
+
 
         }
 
@@ -90,12 +93,12 @@ namespace TheGame
             progresTime.Maximum = this.player.Skills[0].BaseSkillValue;
             progresTime.Value = this.player.Skills[0].SkillCurrentValue;
             LblMax1.Text = player.Skills[0].SkillCurrentValue.ToString();
-           
+
 
             progressBar1.Minimum = 0;
             progressBar1.Maximum = this.player.Skills[1].BaseSkillValue;
             progressBar1.Value = this.player.Skills[1].SkillCurrentValue;
-           
+
 
             label2.Text = player.Skills[1].Name;
             progressBar2.Maximum = this.player.Skills[1].BaseSkillValue;
@@ -133,11 +136,8 @@ namespace TheGame
             progressBar6.Value = this.player.Skills[6].BaseSkillValue;
             label13.Text = player.Skills[6].SkillCurrentValue.ToString();
 
-           
-
-
         }
-     
+
 
         private void tabPage2_Click(object sender, EventArgs e)
         {
@@ -176,7 +176,7 @@ namespace TheGame
         private void gridQuests_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow row = this.gridQuests.Rows[e.RowIndex];
-          
+
             if (gridQuests.SelectedCells[0].Value.ToString() == "Do the quest")
             {
                 if (progressBar1.Value - int.Parse(gridQuests[3, row.Index].Value.ToString()) <= 0)
@@ -184,20 +184,20 @@ namespace TheGame
                     MessageBox.Show(("No Enought Energy"));
                     btnRestore.Show();
                 }
-                else if(progresTime.Value - int.Parse(gridQuests[4, row.Index].Value.ToString()) <= 0)
+                else if (progresTime.Value - int.Parse(gridQuests[4, row.Index].Value.ToString()) <= 0)
                 {
-                     MessageBox.Show(("No Enought Time"));
+                    MessageBox.Show(("No Enought Time"));
                 }
                 else
                 {
-                   
-                    progressBar1.Value -= int.Parse(gridQuests[3, row.Index].Value.ToString());
-                    progresTime.Value -= int.Parse(gridQuests[4, row.Index].Value.ToString());// this.player.Skills[0].SkillCurrentValue;
 
+                    progressBar1.Value -= int.Parse(gridQuests[3, row.Index].Value.ToString());
+                    progresTime.Value -= int.Parse(gridQuests[4, row.Index].Value.ToString());
+                    gridQuests.SelectedCells[0].Value = "Done";
+                    gridQuests.SelectedCells[0].Style.BackColor = SystemColors.MenuHighlight;
                 }
-                
-                gridQuests.SelectedCells[0].Value = "Done";
-                gridQuests.SelectedCells[0].Style.BackColor = SystemColors.GrayText;
+
+
             }
         }
 
@@ -232,6 +232,34 @@ namespace TheGame
         {
             panelTelerik.Hide();
             this.btnRestore.Hide();
+            tabMarket.Show();
+        }
+
+        private void BaseForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void dataMarket_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            dataMarket.Rows.Clear();
+            this.GetFood();
+            this.dataMarket.Show();
+        }
+
+        private void GetFood()
+        {
+            List<string[]> consumables = new List<string[]>();
+            consumables = Parser.GetFood();
+            foreach (var item in consumables)
+            {
+                dataMarket.Rows.Add(item[0],item[2],item[4],item[6],item[8],item[10],item[12],item[14]);
+            }
         }
 
     }

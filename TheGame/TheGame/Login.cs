@@ -74,6 +74,10 @@ namespace TheGame
               //registration.Show();
               //this.Hide();
         }
+        private void Login_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Environment.Exit(0);
+        }
 
       
     }

@@ -169,19 +169,9 @@ namespace TheGame
             this.panel1.Hide();
         }
 
-        private void grdSkills_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void Registration_FormClosed(object sender, FormClosedEventArgs e)
         {
-
-        }
-
-        private void lblInfo_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblGreets_Click(object sender, EventArgs e)
-        {
-
+            Environment.Exit(0);
         }
     }
 }

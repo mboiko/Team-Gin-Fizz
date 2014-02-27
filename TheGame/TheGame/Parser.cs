@@ -41,6 +41,29 @@
             return skills;
         }
 
+        public static List<string[]> GetFood()
+        {
+            List<string[]> lines = new List<string[]>();
+            if (File.Exists("../../ConsumableItems.txt"))
+            {
+                StreamReader sr = new StreamReader("../../ConsumableItems.txt");
+                using (sr)
+                {
+                    while (!sr.EndOfStream)
+                    {
+                        string[] line = sr.ReadLine().Split(new char[] { '|' }, StringSplitOptions.RemoveEmptyEntries);
+                        if (line.Length > 0)
+                        {
+                            lines.Add(line);
+
+                        }
+                    }
+                }
+            }
+            return lines;
+                        
+        }
+
         public static List<Item> GetAllConsumableItems()
         {
             List<Item> ConsumableItems = new List<Item>();
