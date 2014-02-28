@@ -18,9 +18,11 @@ namespace TheGame
     {
         private string username;
         private int counter = 0;
+        private int score = 0;
         private List<string> lines = new List<string>();
         private List<string> bots = new List<string> { "Ivailo", "Doncho", "Pesho", "Kukuruzcho", "Cvetko", "Urujcho", "Evstati", "007" };
         private Player player;
+        Random random = new Random();
         public BaseForm()
         {
             InitializeComponent();
@@ -29,7 +31,7 @@ namespace TheGame
             GetLines();
             btnRestore.Hide();
             timer1.Start();
-
+            lblScore.Text = "0";
         }
 
         public BaseForm(Player player)
@@ -43,7 +45,7 @@ namespace TheGame
 
         private void BaseForm_Load(object sender, EventArgs e)
         {
-
+          
 
         }
 
@@ -190,11 +192,12 @@ namespace TheGame
                 }
                 else
                 {
-
                     progressBar1.Value -= int.Parse(gridQuests[3, row.Index].Value.ToString());
                     progresTime.Value -= int.Parse(gridQuests[4, row.Index].Value.ToString());
                     gridQuests.SelectedCells[0].Value = "Done";
                     gridQuests.SelectedCells[0].Style.BackColor = SystemColors.MenuHighlight;
+
+                    lblScore.Text = (int.Parse(lblScore.Text) + random.Next(1, 50)).ToString();
                 }
 
 
@@ -242,8 +245,37 @@ namespace TheGame
 
         private void dataMarket_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            DataGridViewRow row = this.dataMarket.Rows[e.RowIndex];
 
+
+            if (dataMarket.SelectedCells[0].Value.ToString() == "Buy")
+            {
+                 progresTime.Value = ValidateBar(progresTime, int.Parse(dataMarket[1,row.Index].Value.ToString()),int.Parse(LblMax1.Text));
+
+                 progressBar1.Value = ValidateBar(progressBar1, int.Parse(dataMarket[2, row.Index].Value.ToString()), int.Parse(label3.Text));
+
+                 progressBar2.Value = ValidateBar(progressBar2, int.Parse(dataMarket[3, row.Index].Value.ToString()), int.Parse(label5.Text));
+                 progressBar3.Value = ValidateBar(progressBar3, int.Parse(dataMarket[4, row.Index].Value.ToString()), int.Parse(label7.Text));
+              
+
+
+            }
         }
+
+        private int ValidateBar(ProgressBar pbar, int val, int max)
+        {
+            int result = 0;
+            if ((pbar.Value + val) > 0)
+            {
+                result = pbar.Value + val;
+            }
+            if ((pbar.Value + val) >= max)
+            {
+                result = max-1;
+            }
+            return result;
+        }
+
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
@@ -258,7 +290,7 @@ namespace TheGame
             consumables = Parser.GetFood();
             foreach (var item in consumables)
             {
-                dataMarket.Rows.Add(item[0],item[2],item[4],item[6],item[8],item[10],item[12],item[14]);
+                dataMarket.Rows.Add(item[0],item[2],item[4],item[6],item[8],item[10],item[12],item[14], "Buy");
             }
         }
 

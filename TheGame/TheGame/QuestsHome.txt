@@ -1,0 +1,25 @@
+C# Programing - Part I|To complete this mission you have to pass all submissions|Homework Primitive data types and variables|Submission of C# Programing - Part I|30|240|false|false
+C# Programing - Part I|To complete this mission you have to pass all submissions|Homework Operators and Expressions|Submission of C# Programing - Part I|30|240|false|false
+C# Programing - Part I|To complete this mission you have to pass all submissions|Homework Console Input / Output|Submission of C# Programing - Part I|30|240|false|false
+C# Programing - Part I|To complete this mission you have to pass all submissions|Homework Conditional Statements|Submission of C# Programing - Part I|30|240|false|false
+C# Programing - Part I|To complete this mission you have to pass all submissions|Homework Loops|Submission of C# Programing - Part I|30|240|false|false
+C# Programing - Part I|To complete this mission you have to pass all submissions|Team Work Project|If you pass this mission you may won a present. This mission is not obligatory.|70|480|false|false
+C# Programing - Part I|To complete this mission you have to pass all submissions|Studying for the Exam|This is the last submission of C# Programing - Part I|50|360|false|false
+C# Programing - Part II|To complete this mission you have to pass all submissions|Homework Arrays|Submission of C# Programing - Part II|35|300|false|false
+C# Programing - Part II|To complete this mission you have to pass all submissions|Homework Matrix and Multidimensional arrays|Submission of C# Programing - Part II|35|300|false|false
+C# Programing - Part II|To complete this mission you have to pass all submissions|Homework Methods|Submission of C# Programing - Part II|35|300|false|false
+C# Programing - Part II|To complete this mission you have to pass all submissions|Homework Numeral Systems|Submission of C# Programing - Part II|35|300|false|false
+C# Programing - Part II|To complete this mission you have to pass all submissions|Homework Using Classes and Objects|Submission of C# Programing - Part II|35|300|false|false
+C# Programing - Part II|To complete this mission you have to pass all submissions|Homework Text files|Submission of C# Programing - Part II|35|300|false|false
+C# Programing - Part II|To complete this mission you have to pass all submissions|Homework Exception Handling|Submission of C# Programing - Part II|35|300|false|false
+C# Programing - Part II|To complete this mission you have to pass all submissions|Homework Strings and Text processing|Submission of C# Programing - Part II|35|300|false|false
+C# Programing - Part II|To complete this mission you have to pass all submissions|Team Work Project|If you pass this mission you may won a present. This mission is not obligatory|70|480|false|false
+C# Programing - Part II|To complete this mission you have to pass all submissions|Studying for the Exam|This is the last submission of C# Programing - Part II|60|360|false|false
+Object Oriented Programming - "OOP"|To complete this mission you have to pass all submissions|Homework Defining Classes - Part I|Submission of OOP|55|330|false|false
+Object Oriented Programming - "OOP"|To complete this mission you have to pass all submissions|Homework Defining Classes – Part II|Submission of OOP|55|330|false|false
+Object Oriented Programming - "OOP"|To complete this mission you have to pass all submissions|Homework Extension Methods,Lambda Expressions and LINQ|Submission of OOP|55|330|false|false
+Object Oriented Programming - "OOP"|To complete this mission you have to pass all submissions|Homework Object-Oriented Programming Fundamental Principles – Part I|Submission of OOP|55|330|false|false
+Object Oriented Programming - "OOP"|To complete this mission you have to pass all submissions|Homework Object-Oriented Programming Fundamental Principles – Part II|Submission of OOP|55|300|false|false
+Object Oriented Programming - "OOP"|To complete this mission you have to pass all submissions|Homework Common Type System|Submission of OOP|55|300|false|false
+Object Oriented Programming - "OOP"|To complete this mission you have to pass all submissions|Team Work Project|If you pass this mission you may won a present. This mission is not obligatory.|70|480|false|false
+Object Oriented Programming - "OOP"|To complete this mission you have to pass all submissions|Studying for the Exam|This is the last submission of C# Programing - Part II|65|120|false|false
