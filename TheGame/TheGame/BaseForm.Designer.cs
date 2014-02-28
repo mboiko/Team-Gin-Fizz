@@ -30,11 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaseForm));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle21 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle25 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle22 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle23 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle24 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tabTelerik = new System.Windows.Forms.TabPage();
             this.btnRestore = new System.Windows.Forms.Button();
             this.panelTelerik = new System.Windows.Forms.Panel();
@@ -51,12 +51,24 @@
             this.picBoxTelerik = new System.Windows.Forms.PictureBox();
             this.lstChat = new System.Windows.Forms.ListBox();
             this.lblChat = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.tab = new System.Windows.Forms.TabControl();
             this.tabHome = new System.Windows.Forms.TabPage();
             this.tabMarket = new System.Windows.Forms.TabPage();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.dataMarket = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column16 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.panelHero = new System.Windows.Forms.Panel();
+            this.lblScore = new System.Windows.Forms.Label();
+            this.lblExperience = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.progressBar6 = new System.Windows.Forms.ProgressBar();
@@ -83,21 +95,12 @@
             this.lblSkills = new System.Windows.Forms.Label();
             this.picHero = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column16 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.lblExperience = new System.Windows.Forms.Label();
-            this.lblScore = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.tabTelerik.SuspendLayout();
             this.panelTelerik.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridQuests)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTelerik)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.tab.SuspendLayout();
             this.tabMarket.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -109,12 +112,12 @@
             // tabTelerik
             // 
             this.tabTelerik.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tabTelerik.BackgroundImage")));
-            this.tabTelerik.Controls.Add(this.btnRestore);
             this.tabTelerik.Controls.Add(this.panelTelerik);
             this.tabTelerik.Controls.Add(this.lblTelerikInfo);
             this.tabTelerik.Controls.Add(this.picBoxTelerik);
             this.tabTelerik.Controls.Add(this.lstChat);
             this.tabTelerik.Controls.Add(this.lblChat);
+            this.tabTelerik.Controls.Add(this.pictureBox2);
             this.tabTelerik.Location = new System.Drawing.Point(4, 22);
             this.tabTelerik.Name = "tabTelerik";
             this.tabTelerik.Padding = new System.Windows.Forms.Padding(3);
@@ -128,7 +131,7 @@
             // 
             this.btnRestore.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnRestore.ForeColor = System.Drawing.Color.Red;
-            this.btnRestore.Location = new System.Drawing.Point(6, 548);
+            this.btnRestore.Location = new System.Drawing.Point(50, 520);
             this.btnRestore.Name = "btnRestore";
             this.btnRestore.Size = new System.Drawing.Size(192, 49);
             this.btnRestore.TabIndex = 6;
@@ -142,11 +145,12 @@
             this.panelTelerik.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.panelTelerik.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panelTelerik.BackgroundImage")));
             this.panelTelerik.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelTelerik.Controls.Add(this.button1);
             this.panelTelerik.Controls.Add(this.lblChooseMission);
             this.panelTelerik.Controls.Add(this.gridQuests);
-            this.panelTelerik.Location = new System.Drawing.Point(6, 63);
+            this.panelTelerik.Location = new System.Drawing.Point(-4, 3);
             this.panelTelerik.Name = "panelTelerik";
-            this.panelTelerik.Size = new System.Drawing.Size(860, 367);
+            this.panelTelerik.Size = new System.Drawing.Size(870, 604);
             this.panelTelerik.TabIndex = 5;
             this.panelTelerik.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTelerik_Paint);
             // 
@@ -156,7 +160,7 @@
             this.lblChooseMission.BackColor = System.Drawing.Color.Transparent;
             this.lblChooseMission.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lblChooseMission.ForeColor = System.Drawing.Color.White;
-            this.lblChooseMission.Location = new System.Drawing.Point(332, 36);
+            this.lblChooseMission.Location = new System.Drawing.Point(143, 306);
             this.lblChooseMission.Name = "lblChooseMission";
             this.lblChooseMission.Size = new System.Drawing.Size(269, 39);
             this.lblChooseMission.TabIndex = 4;
@@ -170,14 +174,14 @@
             this.gridQuests.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.gridQuests.BackgroundColor = System.Drawing.SystemColors.ControlLightLight;
             this.gridQuests.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.gridQuests.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle21.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle21.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle21.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle21.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle21.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle21.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle21.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gridQuests.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle21;
             this.gridQuests.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridQuests.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column5,
@@ -187,26 +191,26 @@
             this.Column9,
             this.Column10,
             this.Column11});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.gridQuests.DefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle25.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle25.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle25.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle25.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle25.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle25.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle25.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gridQuests.DefaultCellStyle = dataGridViewCellStyle25;
             this.gridQuests.GridColor = System.Drawing.Color.OliveDrab;
-            this.gridQuests.Location = new System.Drawing.Point(141, 80);
+            this.gridQuests.Location = new System.Drawing.Point(26, 357);
             this.gridQuests.Name = "gridQuests";
             this.gridQuests.ReadOnly = true;
-            this.gridQuests.Size = new System.Drawing.Size(716, 284);
+            this.gridQuests.Size = new System.Drawing.Size(666, 279);
             this.gridQuests.TabIndex = 3;
             this.gridQuests.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridQuests_CellContentClick);
             // 
             // Column5
             // 
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column5.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle22.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column5.DefaultCellStyle = dataGridViewCellStyle22;
             this.Column5.HeaderText = "id";
             this.Column5.Name = "Column5";
             this.Column5.ReadOnly = true;
@@ -214,8 +218,8 @@
             // 
             // Column6
             // 
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column6.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle23.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column6.DefaultCellStyle = dataGridViewCellStyle23;
             this.Column6.HeaderText = "Type";
             this.Column6.Name = "Column6";
             this.Column6.ReadOnly = true;
@@ -223,8 +227,8 @@
             // 
             // Column7
             // 
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column7.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle24.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column7.DefaultCellStyle = dataGridViewCellStyle24;
             this.Column7.HeaderText = "Description";
             this.Column7.Name = "Column7";
             this.Column7.ReadOnly = true;
@@ -271,10 +275,10 @@
             this.lblTelerikInfo.ForeColor = System.Drawing.Color.Red;
             this.lblTelerikInfo.Location = new System.Drawing.Point(244, 298);
             this.lblTelerikInfo.Name = "lblTelerikInfo";
-            this.lblTelerikInfo.Size = new System.Drawing.Size(204, 25);
+            this.lblTelerikInfo.Size = new System.Drawing.Size(0, 25);
             this.lblTelerikInfo.TabIndex = 4;
-            this.lblTelerikInfo.Text = "Click to Get Mission";
             this.lblTelerikInfo.Visible = false;
+            this.lblTelerikInfo.Click += new System.EventHandler(this.lblTelerikInfo_Click);
             // 
             // picBoxTelerik
             // 
@@ -307,6 +311,16 @@
             this.lblChat.Size = new System.Drawing.Size(43, 18);
             this.lblChat.TabIndex = 4;
             this.lblChat.Text = "Chat";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Location = new System.Drawing.Point(642, 318);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(227, 112);
+            this.pictureBox2.TabIndex = 7;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // tab
             // 
@@ -349,9 +363,9 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(47, 444);
+            this.pictureBox1.Location = new System.Drawing.Point(417, 464);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(234, 101);
+            this.pictureBox1.Size = new System.Drawing.Size(234, 95);
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
@@ -373,16 +387,75 @@
             this.Column14,
             this.Column15,
             this.Column16});
-            this.dataMarket.Location = new System.Drawing.Point(6, 50);
+            this.dataMarket.Location = new System.Drawing.Point(19, 34);
             this.dataMarket.Name = "dataMarket";
-            this.dataMarket.Size = new System.Drawing.Size(854, 330);
+            this.dataMarket.Size = new System.Drawing.Size(816, 346);
             this.dataMarket.TabIndex = 0;
             this.dataMarket.Visible = false;
             this.dataMarket.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataMarket_CellContentClick);
             // 
+            // Column1
+            // 
+            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Column1.HeaderText = "Product";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 69;
+            // 
+            // Column2
+            // 
+            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Column2.HeaderText = "Time";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 55;
+            // 
+            // Column3
+            // 
+            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Column3.HeaderText = "Energy";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 65;
+            // 
+            // Column4
+            // 
+            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Column4.HeaderText = "Efficiency";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 78;
+            // 
+            // Column12
+            // 
+            this.Column12.HeaderText = "Creativity";
+            this.Column12.Name = "Column12";
+            // 
+            // Column13
+            // 
+            this.Column13.HeaderText = "Communication";
+            this.Column13.Name = "Column13";
+            // 
+            // Column14
+            // 
+            this.Column14.HeaderText = "Programming";
+            this.Column14.Name = "Column14";
+            // 
+            // Column15
+            // 
+            this.Column15.HeaderText = "Motivation";
+            this.Column15.Name = "Column15";
+            // 
+            // Column16
+            // 
+            this.Column16.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
+            this.Column16.HeaderText = "Buy Item";
+            this.Column16.Name = "Column16";
+            this.Column16.ReadOnly = true;
+            this.Column16.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column16.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            this.Column16.Width = 73;
+            // 
             // panelHero
             // 
             this.panelHero.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.panelHero.Controls.Add(this.btnRestore);
             this.panelHero.Controls.Add(this.lblScore);
             this.panelHero.Controls.Add(this.lblExperience);
             this.panelHero.Controls.Add(this.label12);
@@ -414,6 +487,24 @@
             this.panelHero.Name = "panelHero";
             this.panelHero.Size = new System.Drawing.Size(297, 603);
             this.panelHero.TabIndex = 1;
+            // 
+            // lblScore
+            // 
+            this.lblScore.AutoSize = true;
+            this.lblScore.Location = new System.Drawing.Point(86, 430);
+            this.lblScore.Name = "lblScore";
+            this.lblScore.Size = new System.Drawing.Size(0, 13);
+            this.lblScore.TabIndex = 30;
+            // 
+            // lblExperience
+            // 
+            this.lblExperience.AutoSize = true;
+            this.lblExperience.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblExperience.Location = new System.Drawing.Point(10, 430);
+            this.lblExperience.Name = "lblExperience";
+            this.lblExperience.Size = new System.Drawing.Size(70, 13);
+            this.lblExperience.TabIndex = 29;
+            this.lblExperience.Text = "Experience";
             // 
             // label12
             // 
@@ -649,81 +740,16 @@
             this.timer1.Interval = 2000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // Column1
+            // button1
             // 
-            this.Column1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Column1.HeaderText = "Product";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 69;
-            // 
-            // Column2
-            // 
-            this.Column2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Column2.HeaderText = "Time";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 55;
-            // 
-            // Column3
-            // 
-            this.Column3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Column3.HeaderText = "Energy";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 65;
-            // 
-            // Column4
-            // 
-            this.Column4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Column4.HeaderText = "Efficiency";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 78;
-            // 
-            // Column12
-            // 
-            this.Column12.HeaderText = "Creativity";
-            this.Column12.Name = "Column12";
-            // 
-            // Column13
-            // 
-            this.Column13.HeaderText = "Communication";
-            this.Column13.Name = "Column13";
-            // 
-            // Column14
-            // 
-            this.Column14.HeaderText = "Programming";
-            this.Column14.Name = "Column14";
-            // 
-            // Column15
-            // 
-            this.Column15.HeaderText = "Motivation";
-            this.Column15.Name = "Column15";
-            // 
-            // Column16
-            // 
-            this.Column16.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.Column16.HeaderText = "Buy Item";
-            this.Column16.Name = "Column16";
-            this.Column16.ReadOnly = true;
-            this.Column16.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Column16.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.Column16.Width = 73;
-            // 
-            // lblExperience
-            // 
-            this.lblExperience.AutoSize = true;
-            this.lblExperience.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblExperience.Location = new System.Drawing.Point(10, 430);
-            this.lblExperience.Name = "lblExperience";
-            this.lblExperience.Size = new System.Drawing.Size(70, 13);
-            this.lblExperience.TabIndex = 29;
-            this.lblExperience.Text = "Experience";
-            // 
-            // lblScore
-            // 
-            this.lblScore.AutoSize = true;
-            this.lblScore.Location = new System.Drawing.Point(86, 430);
-            this.lblScore.Name = "lblScore";
-            this.lblScore.Size = new System.Drawing.Size(0, 13);
-            this.lblScore.TabIndex = 30;
+            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.Location = new System.Drawing.Point(10, 10);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(64, 37);
+            this.button1.TabIndex = 5;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // BaseForm
             // 
@@ -742,6 +768,7 @@
             this.panelTelerik.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridQuests)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxTelerik)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.tab.ResumeLayout(false);
             this.tabMarket.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -816,6 +843,8 @@
         private System.Windows.Forms.DataGridViewButtonColumn Column16;
         private System.Windows.Forms.Label lblExperience;
         private System.Windows.Forms.Label lblScore;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Button button1;
 
     }
 }

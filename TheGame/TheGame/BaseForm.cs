@@ -236,6 +236,7 @@ namespace TheGame
             panelTelerik.Hide();
             this.btnRestore.Hide();
             tabMarket.Show();
+            tab.SelectedIndex = 2;
         }
 
         private void BaseForm_FormClosed(object sender, FormClosedEventArgs e)
@@ -292,6 +293,21 @@ namespace TheGame
             {
                 dataMarket.Rows.Add(item[0],item[2],item[4],item[6],item[8],item[10],item[12],item[14], "Buy");
             }
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            tab.SelectedIndex = 2;
+        }
+
+        private void lblTelerikInfo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            panelTelerik.Hide();
         }
 
     }
